@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ModernShop</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top py-3">
+        
+        <div class="container">
+            
+            <!-- Logo -->
+            <a class="navbar-brand fw-bold fs-3" href="#">
+                ModernShop
+            </a>
+            
+            <!-- Mobile Toggle Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu">
+                
+                <span class="navbar-toggler-icon"></span>
+            
+            </button>
+            
+            <!-- Menu -->
+            <div class="collapse navbar-collapse" id="mainMenu">
+                
+                <!-- Left Menu -->
+                <ul class="navbar-nav mx-auto">
+                    
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">
+                            Home
+                        </a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            Shop
+                        </a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            Categories
+                        </a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            About
+                        </a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        
+                        <a class="nav-link" href="#">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+                
+                <!-- Right Icons -->
+                <div class="d-flex align-items-center gap-3">
+                    
+                    <!-- Theme Switch -->
+                    <button class="theme-toggle-btn"
+                        id="themeToggle">
+                        
+                        <i class="bi bi-moon-fill"></i>
+                    </button>
+
+                    <a href="#" class="text-dark fs-5">
+                        <i class="bi bi-search"></i>
+                    </a>
+                    
+                    <a href="#" class="text-dark fs-5 position-relative">
+                        
+                        <i class="bi bi-cart3"></i>
+                        
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                            2
+                        </span>
+                    </a>
+                
+                </div>
+            
+            </div>
+        
+        </div>
+    
+    </nav>
+    
+    <!-- Navbar End -->
+
+    <!-- Cart Section Start -->
+
+    <section class="cart-section py-5">
+
+        <div class="container">
+
+            <!-- Page Title -->
+            <div class="text-center mb-5">
+
+                <h2 class="section-title">
+                    Shopping Cart
+                </h2>
+
+                <p class="section-text">
+                    Review your selected products before checkout.
+                </p>
+
+            </div>
+
+            <div class="row">
+
+                <!-- Cart Table -->
+                <div class="col-lg-8">
+
+                    <div class="cart-table">
+
+                        <table class="table align-middle">
+
+                            <thead>
+
+                                <tr>
+
+                                    <th>Product</th>
+                                    <th>Price</th>
+                                    <th>Quantity</th>
+                                    <th>Total</th>
+                                    <th>Remove</th>
+
+                                </tr>
+
+                            </thead>
+
+                            <tbody>
+
+                                <!-- Item -->
+                                <tr>
+
+                                    <td>
+
+                                        <div class="cart-product d-flex align-items-center">
+
+                                            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=400&auto=format&fit=crop"
+                                                alt="Product">
+
+                                            <div class="ms-3">
+
+                                                <h6>
+                                                    Modern Sneakers
+                                                </h6>
+
+                                            </div>
+
+                                        </div>
+
+                                    </td>
+
+                                    <td>
+                                        $89
+                                    </td>
+
+                                    <td>
+
+                                        <input type="number"
+                                            value="1"
+                                            min="1"
+                                            class="form-control cart-qty">
+
+                                    </td>
+
+                                    <td>
+                                        $89
+                                    </td>
+
+                                    <td>
+
+                                        <a href="#" class="remove-btn">
+                                            <i class="bi bi-x-lg"></i>
+                                        </a>
+
+                                    </td>
+
+                                </tr>
+
+                                <!-- Item -->
+                                <tr>
+
+                                    <td>
+
+                                        <div class="cart-product d-flex align-items-center">
+
+                                            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=400&auto=format&fit=crop"
+                                                alt="Product">
+
+                                            <div class="ms-3">
+
+                                                <h6>
+                                                Wireless Headphone
+                                                </h6>
+
+                                            </div>
+
+                                        </div>
+
+                                    </td>
+
+                                    <td>
+                                        $120
+                                    </td>
+
+                                    <td>
+
+                                        <input type="number"
+                                            value="1"
+                                            min="1"
+                                            class="form-control cart-qty">
+
+                                    </td>
+
+                                    <td>
+                                        $120
+                                    </td>
+
+                                    <td>
+
+                                        <a href="#" class="remove-btn">
+                                            <i class="bi bi-x-lg"></i>
+                                        </a>
+
+                                    </td>
+
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                    <!-- Coupon -->
+                    <div class="coupon-box mt-4">
+
+                        <input type="text"
+                            placeholder="Coupon Code"
+                            class="form-control">
+
+                        <button class="btn coupon-btn">
+                            Apply Coupon
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <!-- Cart Totals -->
+                <div class="col-lg-4 mt-5 mt-lg-0">
+
+                        <div class="cart-total-box">
+
+                        <h4>
+                            Cart Totals
+                        </h4>
+
+                        <div class="cart-total-item">
+
+                            <span>Subtotal</span>
+                            <span>$209</span>
+
+                        </div>
+
+                        <div class="cart-total-item">
+
+                            <span>Shipping</span>
+                            <span>$10</span>
+
+                        </div>
+
+                        <div class="cart-total-item total">
+
+                            <span>Total</span>
+                            <span>$219</span>
+
+                        </div>
+
+                        <a href="#" class="btn checkout-btn w-100 mt-4">
+                            Proceed To Checkout
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Cart Section End -->
+
+    <!-- Footer Start -->
+    <footer class="footer-section">
+        
+        <div class="container">
+            
+            <div class="row g-5">
+                
+                <!-- About -->
+                <div class="col-lg-4">
+                    
+                    <h3 class="footer-logo">
+                        ModernShop
+                    </h3>
+                    
+                    <p class="footer-text mt-4">
+                        Premium ecommerce experience with modern fashion,
+                        quality products, and trusted customer service.
+                    </p>
+                    
+                    <!-- Social Icons -->
+                    <div class="footer-social mt-4">
+                        
+                        <a href="#">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        
+                        <a href="#">
+                            <i class="bi bi-twitter-x"></i>
+                        </a>
+                        
+                        <a href="#">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        
+                        <a href="#">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                    
+                    </div>
+                
+                </div>
+                
+                <!-- Quick Links -->
+                <div class="col-lg-2 col-md-6">
+                    
+                    <h5 class="footer-title">
+                        Quick Links
+                    </h5>
+                    
+                    <ul class="footer-links">
+                        
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="#">Categories</a></li>
+                        <li><a href="#">Contact</a></li>
+                    
+                    </ul>
+                
+                </div>
+                
+                <!-- Categories -->
+                <div class="col-lg-3 col-md-6">
+                    
+                    <h5 class="footer-title">
+                        Categories
+                    </h5>
+                    
+                    <ul class="footer-links">
+
+                        <li><a href="#">Fashion</a></li>
+                        <li><a href="#">Electronics</a></li>
+                        <li><a href="#">Accessories</a></li>
+                        <li><a href="#">Shoes</a></li>
+                    
+                    </ul>
+                
+                </div>
+                
+                <!-- Contact -->
+                <div class="col-lg-3">
+                    
+                    <h5 class="footer-title">
+                        Contact
+                    </h5>
+                    
+                    <ul class="footer-contact">
+                        
+                        <li>
+                            <i class="bi bi-geo-alt"></i>
+                            Dhaka, Bangladesh
+                        </li>
+                        
+                        <li>
+                            <i class="bi bi-envelope"></i>
+                            meritpaul12@gmail.com
+                        </li>
+                        
+                        <li>
+                            <i class="bi bi-telephone"></i>
+                            +880 1812109812
+                        </li>
+                    
+                    </ul>
+                
+                </div>
+            
+            </div>
+            
+            <!-- Copyright -->
+            <div class="footer-bottom text-center mt-5">
+                
+                <p>
+                    © 2026 ModernShop. All Rights Reserved.
+                </p>
+            
+            </div>
+        
+        </div>
+    
+    </footer>
+    
+    <!-- Footer End -->
+
+    <!-- Mobile Bottom Navigation Start -->
+
+    <div class="mobile-nav">
+
+        <!-- Home -->
+        <a href="index.html"
+            class="mobile-nav-item active">
+
+            <i class="bi bi-house-door"></i>
+
+            <span>
+                Home
+            </span>
+
+        </a>
+
+        <!-- Shop -->
+        <a href="shop.html"
+            class="mobile-nav-item">
+
+            <i class="bi bi-grid"></i>
+
+            <span>
+                Shop
+            </span>
+
+        </a>
+
+        <!-- Cart -->
+        <a href="cart.html"
+            class="mobile-nav-item">
+
+            <i class="bi bi-cart3"></i>
+
+            <span>
+                Cart
+            </span>
+
+        </a>
+
+        <!-- Wishlist -->
+        <a href="#"
+            class="mobile-nav-item">
+
+            <i class="bi bi-heart"></i>
+
+            <span>
+                Wishlist
+            </span>
+
+        </a>
+
+        <!-- Profile -->
+        <a href="#"
+            class="mobile-nav-item">
+
+            <i class="bi bi-person"></i>
+
+            <span>
+                Profile
+            </span>
+
+        </a>
+
+    </div>
+
+    <!-- Mobile Bottom Navigation End -->
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
