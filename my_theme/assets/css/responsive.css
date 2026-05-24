@@ -1,0 +1,41 @@
+/* Tablet */
+
+@media(max-width:991px){
+
+    .hero-content h1{
+        font-size:48px;
+    }
+
+}
+
+/* Mobile */
+
+@media(max-width:767px){
+
+    .hero-slide{
+        height:80vh;
+    }
+
+    .hero-content h1{
+        font-size:34px;
+    }
+
+    .section-title{
+        font-size:30px;
+    }
+
+}
+
+/* about */
+
+@media(max-width:767px){
+
+    .page-banner h1{
+        font-size:36px;
+    }
+
+    .about-title{
+        font-size:34px;
+    }
+
+}

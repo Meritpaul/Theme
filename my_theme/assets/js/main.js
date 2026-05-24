@@ -42,3 +42,27 @@ AOS.init({
     once: true
 
 });
+
+// Preloader
+
+window.addEventListener("load", () => {
+
+    const preloader =
+    document.getElementById("preloader");
+
+    preloader.classList.add("hide");
+
+});
+
+// Sticky Navbar
+
+window.addEventListener("scroll", function(){
+
+    let navbar = document.querySelector(".navbar");
+
+    navbar.classList.toggle(
+        "scrolled",
+        window.scrollY > 50
+    );
+
+});
