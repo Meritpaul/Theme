@@ -1,0 +1,21 @@
+Version 1.0.0
+
+Initial Release
+
+Added:
+- Homepage
+- Shop Page
+- Product Page
+- Cart Page
+- Checkout Page
+- About Page
+- Contact Page
+- Blog Page
+- Blog Details Page
+- FAQ Page
+- 404 Page
+- Mega Menu
+- Hero Slider
+- Sticky Header
+- Dark Mode
+- Responsive Design
