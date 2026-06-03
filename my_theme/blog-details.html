@@ -5,18 +5,24 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon"
-        type="image/png"
-        href="assets/images/favicon.png">
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
 
-    <title>Blog Details - ModernShop</title>
+    <title>Top Fashion Trends For Modern Lifestyle - ModernShop Blog</title>
 
-    <link rel="preconnect"
-        href="https://fonts.googleapis.com">
-        
-    <link rel="preconnect"
-        href="https://fonts.gstatic.com"
-        crossorigin>
+    <meta name="description"
+        content="Discover the latest fashion trends and premium styles that define the modern wardrobe in 2026.">
+
+    <!-- Anti-FOUC: apply saved dark theme before paint -->
+    <script>
+        if (localStorage.getItem("theme") === "dark") {
+            document.documentElement.classList.add("dark-mode");
+        }
+    </script>
+
+    <!-- Google Font: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -24,260 +30,122 @@
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-    <!-- AOS Animation -->
-    <link rel="stylesheet"
-        href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
-
     <link rel="stylesheet" href="assets/css/responsive.css">
+
 </head>
 
 <body>
 
     <!-- Preloader Start -->
-
     <div id="preloader">
-
         <div class="loader">
-
             <span></span>
             <span></span>
             <span></span>
-
         </div>
-
     </div>
-
-    <!-- Preloader End -->    
+    <!-- Preloader End -->
 
     <!-- Navbar Start -->
-
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top custom-navbar">
+    <nav class="navbar navbar-expand-lg fixed-top custom-navbar">
 
         <div class="container">
 
-            <!-- Logo -->
+            <a class="navbar-brand fw-bold fs-3" href="index.html">ModernShop</a>
 
-            <a class="navbar-brand fw-bold fs-3"
-                href="index.html">
-
-                ModernShop
-
-            </a>
-
-            <!-- Mobile Toggle -->
-
-            <button class="navbar-toggler"
-                type="button"
+            <button class="navbar-toggler border-0" type="button"
                 data-bs-toggle="collapse"
-                data-bs-target="#mainMenu">
-
+                data-bs-target="#mainMenu"
+                aria-controls="mainMenu"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-
             </button>
 
-            <!-- Menu -->
-
-            <div class="collapse navbar-collapse"
-                id="mainMenu">
-
-                <!-- Main Menu -->
+            <div class="collapse navbar-collapse" id="mainMenu">
 
                 <ul class="navbar-nav mx-auto">
 
-                    <li class="nav-item">
-                        <a class="nav-link"
-                            href="index.html">
-
-                            Home
-
-                        </a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link"
-                            href="shop.html">
-
-                            Shop
-
-                        </a>
-                    </li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
 
                     <!-- Mega Menu -->
-
-                    <li class="nav-item dropdown mega-menu-item">
-
-                        <a class="nav-link dropdown-toggle"
-                            href="#">
-
-                            Categories
-
+                    <li class="nav-item mega-menu-item">
+                        <a class="nav-link" href="#">
+                            Categories <i class="bi bi-chevron-down ms-1" style="font-size:12px;"></i>
                         </a>
-
                         <div class="mega-menu">
-
                             <div class="row">
-
                                 <div class="col-lg-3">
-
-                                    <h5 class="mega-title">
-                                        Fashion
-                                    </h5>
-
+                                    <h5 class="mega-title">Fashion</h5>
                                     <ul class="mega-links">
-
                                         <li><a href="shop.html">Men Fashion</a></li>
                                         <li><a href="shop.html">Women Fashion</a></li>
                                         <li><a href="shop.html">Shoes</a></li>
                                         <li><a href="shop.html">Bags</a></li>
                                         <li><a href="shop.html">Accessories</a></li>
-
                                     </ul>
-
                                 </div>
-
                                 <div class="col-lg-3">
-
-                                    <h5 class="mega-title">
-                                        Electronics
-                                    </h5>
-
+                                    <h5 class="mega-title">Electronics</h5>
                                     <ul class="mega-links">
-
                                         <li><a href="shop.html">Smartphones</a></li>
                                         <li><a href="shop.html">Laptop</a></li>
                                         <li><a href="shop.html">Gaming</a></li>
                                         <li><a href="shop.html">Headphones</a></li>
                                         <li><a href="shop.html">Smart Watch</a></li>
-
                                     </ul>
-
                                 </div>
-
                                 <div class="col-lg-3">
-
-                                    <h5 class="mega-title">
-                                        Home & Living
-                                    </h5>
-
+                                    <h5 class="mega-title">Home & Living</h5>
                                     <ul class="mega-links">
-
                                         <li><a href="shop.html">Furniture</a></li>
                                         <li><a href="shop.html">Lighting</a></li>
                                         <li><a href="shop.html">Kitchen</a></li>
                                         <li><a href="shop.html">Decor</a></li>
                                         <li><a href="shop.html">Office Setup</a></li>
-
                                     </ul>
-
                                 </div>
-
                                 <div class="col-lg-3">
-
                                     <div class="mega-promo">
-
-                                        <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?q=80&w=1200&auto=format&fit=crop"
-                                            class="img-fluid"
-                                            alt="Sale">
-
+                                        <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?q=80&w=800&auto=format&fit=crop"
+                                            class="img-fluid" alt="Sale">
                                         <div class="mega-promo-content">
-
-                                            <h4>
-                                                Summer Sale
-                                            </h4>
-
-                                            <p>
-                                                Up To 50% Off
-                                            </p>
-
-                                            <a href="shop.html"
-                                                class="btn btn-light btn-sm">
-
-                                                Shop Now
-
-                                            </a>
-
+                                            <h4>Summer Sale</h4>
+                                            <p>Up To 50% Off</p>
+                                            <a href="shop.html" class="btn btn-light btn-sm mt-2">Shop Now</a>
                                         </div>
-
                                     </div>
-
                                 </div>
-
                             </div>
-
                         </div>
-
                     </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link"
-                            href="about.html">
-
-                            About
-
-                        </a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link active"
-                            href="blog.html">
-
-                            Blog
-
-                        </a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link"
-                            href="faq.html">
-
-                            FAQ
-
-                        </a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link"
-                            href="contact.html">
-
-                            Contact
-
-                        </a>
-                    </li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
 
                 </ul>
 
-                <!-- Right Icons -->
-
                 <div class="d-flex align-items-center gap-3">
 
-                    <button class="theme-toggle-btn"
-                        id="themeToggle">
-
+                    <button class="theme-toggle-btn" id="themeToggle" aria-label="Toggle dark mode">
                         <i class="bi bi-moon-fill"></i>
-
                     </button>
 
-                    <a href="#"
-                        class="text-dark fs-5">
-
+                    <a href="#" class="text-dark fs-5" aria-label="Search">
                         <i class="bi bi-search"></i>
-
                     </a>
 
-                    <a href="cart.html"
-                        class="text-dark fs-5 position-relative">
-
+                    <a href="cart.html" class="text-dark fs-5 position-relative" aria-label="Cart">
                         <i class="bi bi-cart3"></i>
-
-                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-
-                            2
-
-                        </span>
-
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">2</span>
                     </a>
 
                 </div>
@@ -287,228 +155,243 @@
         </div>
 
     </nav>
-
     <!-- Navbar End -->
 
     <!-- Page Banner Start -->
-
-    <section class="page-banner">
-
-        <div class="container text-center">
-
-            <h1>Blog Details</h1>
-
-            <p>Home / Blog Details</p>
-
+    <section class="shop-banner" style="padding: 80px 0;">
+        <div class="container">
+            <h1 style="font-size:42px;">Blog Details</h1>
+            <p>
+                <a href="index.html" class="text-white text-decoration-none">Home</a>
+                / <a href="blog.html" class="text-white text-decoration-none">Blog</a>
+                / Fashion
+            </p>
         </div>
-
     </section>
-
     <!-- Page Banner End -->
 
     <!-- Blog Section Start -->
-
     <section class="blog-page py-5">
 
         <div class="container">
 
             <div class="row g-5">
 
-                <!-- Blog Posts -->
+                <!-- Blog Content -->
                 <div class="col-lg-8">
 
-                    <!-- Blog Details -->
-                    
-                    <div class="blog-details">
+                    <article class="blog-details" data-aos="fade-up">
 
                         <!-- Featured Image -->
                         <div class="blog-details-image">
-                            <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?q=80&w=1400"
-                                loading="lazy"
+                            <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?q=80&w=1400&auto=format&fit=crop"
+                                loading="eager"
                                 class="img-fluid rounded-4"
-                                alt="Blog">
-                            
+                                alt="Top Fashion Trends For Modern Lifestyle">
                         </div>
-                        
+
                         <!-- Meta -->
                         <div class="blog-details-meta mt-4">
-                            
-                            <span>
-                                Fashion
-                            </span>
-                            
-                            <span>
-                                January 15, 2026
-                            </span>
-                            
-                            <span>
-                                By Admin
-                            </span>
-                        
+                            <span><i class="bi bi-tag me-1"></i>Fashion</span>
+                            <span><i class="bi bi-calendar3 me-1"></i>January 15, 2026</span>
+                            <span><i class="bi bi-person me-1"></i>By Admin</span>
+                            <span><i class="bi bi-chat me-1"></i>2 Comments</span>
                         </div>
-                        
+
                         <!-- Title -->
-                        <h2 class="blog-details-title mt-4">
-                            
+                        <h1 class="blog-details-title mt-4">
                             Top Fashion Trends For Modern Lifestyle
-                        
-                        </h2>
-                        
+                        </h1>
+
                         <!-- Content -->
-                        
                         <p class="blog-details-text">
-                            
-                            Fashion trends continue evolving with modern lifestyle
-                            and premium quality design experiences.
-                        
+                            Fashion trends continue evolving with modern lifestyle, blending timeless elegance with
+                            bold contemporary statements. In 2026, the fashion world is embracing sustainability,
+                            comfort, and individuality like never before. From oversized silhouettes to earthy tones,
+                            the modern wardrobe is a reflection of personal identity and global awareness.
                         </p>
-                        
+
                         <p class="blog-details-text">
-                            
-                            Modern e-commerce platforms focus on responsive design,
-                            smooth shopping experience, and premium product presentation.
-                        
+                            Modern e-commerce platforms have transformed the way people discover and purchase fashion.
+                            With responsive design, smooth shopping experiences, and premium product presentation,
+                            online shopping now rivals — and often surpasses — the in-store experience.
                         </p>
-                        
+
+                        <!-- Inline Image -->
+                        <div class="my-4">
+                            <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?q=80&w=1200&auto=format&fit=crop"
+                                loading="lazy" class="img-fluid rounded-4" alt="Fashion Collection 2026">
+                        </div>
+
+                        <h3 class="mt-4 mb-3" style="font-weight:700;">Key Trends Defining 2026</h3>
+
+                        <p class="blog-details-text">
+                            This year's standout trends center around three pillars: minimalism, functionality,
+                            and sustainability. Consumers are gravitating toward pieces that serve multiple purposes
+                            and are built to last — moving away from fast fashion toward thoughtful investment dressing.
+                        </p>
+
+                        <ul style="color:#666; line-height:2.2; padding-left:20px;">
+                            <li>Oversized blazers paired with slim trousers</li>
+                            <li>Earthy and neutral tones dominating color palettes</li>
+                            <li>Sustainable fabrics like organic cotton and recycled polyester</li>
+                            <li>Bold monochromatic looks from head to toe</li>
+                            <li>Elevated athleisure blending sport and style</li>
+                        </ul>
+
                         <!-- Quote -->
                         <div class="blog-quote">
-                            
-                            <h4>
-                                
-                                "Good design creates better user experiences."
-                            
-                            </h4>
-                        
+                            <h4>"Style is a way to say who you are without having to speak."</h4>
+                            <p class="mb-0 mt-2 text-muted" style="font-size:14px;">— Rachel Zoe</p>
                         </div>
-                        
+
                         <p class="blog-details-text">
-                            
-                            Buyers now prefer clean interfaces,
-                            modern typography, and smooth animations
-                            in e-commerce platforms.
-                        
+                            Buyers now prefer clean interfaces, modern typography, and smooth animations in
+                            e-commerce platforms. The brands that invest in great digital presentation see
+                            significantly higher conversion rates and customer loyalty. The future of fashion
+                            is as much about the buying experience as the product itself.
                         </p>
-                        
-                        <!-- Tags -->
-                        <div class="blog-tags mt-5">
-                            
-                            <a href="#">
-                                Fashion
-                            </a>
-                            
-                            <a href="#">
-                                E-commerce
-                            </a>
-                            
-                            <a href="#">
-                                Lifestyle
-                            </a>
-                        
+
+                        <p class="blog-details-text">
+                            Whether you're refreshing your wardrobe for the season or building a capsule collection,
+                            focusing on versatile, high-quality pieces will always serve you better than chasing
+                            every micro-trend. Invest in what you love and wear with confidence.
+                        </p>
+
+                        <!-- Tags & Share -->
+                        <div class="d-flex justify-content-between align-items-center flex-wrap gap-3 mt-5 pt-4 border-top">
+
+                            <div class="blog-tags">
+                                <a href="#">Fashion</a>
+                                <a href="#">E-commerce</a>
+                                <a href="#">Lifestyle</a>
+                                <a href="#">2026</a>
+                            </div>
+
+                            <div class="d-flex gap-2 align-items-center">
+                                <span class="text-muted me-1" style="font-size:14px;">Share:</span>
+                                <a href="#" class="btn btn-sm btn-outline-dark rounded-3" aria-label="Share on Facebook">
+                                    <i class="bi bi-facebook"></i>
+                                </a>
+                                <a href="#" class="btn btn-sm btn-outline-dark rounded-3" aria-label="Share on Twitter">
+                                    <i class="bi bi-twitter-x"></i>
+                                </a>
+                                <a href="#" class="btn btn-sm btn-outline-dark rounded-3" aria-label="Share on LinkedIn">
+                                    <i class="bi bi-linkedin"></i>
+                                </a>
+                            </div>
+
                         </div>
-                        
+
+                        <!-- Prev / Next Post Nav -->
+                        <div class="d-flex justify-content-between gap-3 mt-4 flex-wrap">
+                            <a href="blog-details.html"
+                                class="btn btn-outline-dark px-4 py-2"
+                                style="border-radius:12px;">
+                                <i class="bi bi-arrow-left me-2"></i>Previous Post
+                            </a>
+                            <a href="blog-details.html"
+                                class="btn btn-outline-dark px-4 py-2"
+                                style="border-radius:12px;">
+                                Next Post<i class="bi bi-arrow-right ms-2"></i>
+                            </a>
+                        </div>
+
                         <!-- Comments -->
                         <div class="blog-comments mt-5">
-                            
-                            <h3 class="mb-4">
-                                Comments
-                            </h3>
-                            
-                            <!-- Comment -->
-                            <div class="comment-box">
 
-                                <img src="https://randomuser.me/api/portraits/women/44.jpg"
-                                    loading="lazy"
-                                    alt="User">
-                                    
-                                <div>
-                                    
-                                    <h5>
-                                        Sarah Johnson
-                                    </h5>
-                                    
-                                    <p>
-                                        
-                                        Amazing blog post with modern ecommerce insights.
-                                    
-                                    </p>
-                                
-                                </div>
-                            
-                            </div>
-                            
-                            <!-- Comment -->
+                            <h3 class="mb-4">2 Comments</h3>
+
                             <div class="comment-box">
-                                
-                                <img src="https://randomuser.me/api/portraits/men/32.jpg"
-                                    loading="lazy"
-                                    alt="User">
-                                    
+                                <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=120&auto=format&fit=crop"
+                                    loading="lazy" alt="Sarah Johnson">
                                 <div>
-                                    
-                                    <h5>
-                                        Michael Lee
-                                    </h5>
-                                    
-                                    <p>
-                                        
-                                        Very clean design and excellent shopping experience ideas.
+                                    <div class="d-flex justify-content-between align-items-center mb-1 flex-wrap gap-2">
+                                        <h5 class="mb-0">Sarah Johnson</h5>
+                                        <small class="text-muted"><i class="bi bi-calendar3 me-1"></i>Jan 16, 2026</small>
+                                    </div>
+                                    <p class="mb-2 text-muted">
+                                        Amazing blog post with insightful modern e-commerce perspectives.
+                                        The section on sustainable fashion really resonated with me!
                                     </p>
-                                
+                                    <button class="btn btn-sm btn-outline-dark" style="border-radius:8px; font-size:13px;">
+                                        <i class="bi bi-reply me-1"></i>Reply
+                                    </button>
                                 </div>
-                            
+                            </div>
+
+                            <div class="comment-box">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=120&auto=format&fit=crop"
+                                    loading="lazy" alt="Michael Lee">
+                                <div>
+                                    <div class="d-flex justify-content-between align-items-center mb-1 flex-wrap gap-2">
+                                        <h5 class="mb-0">Michael Lee</h5>
+                                        <small class="text-muted"><i class="bi bi-calendar3 me-1"></i>Jan 17, 2026</small>
+                                    </div>
+                                    <p class="mb-2 text-muted">
+                                        Very clean writing and excellent shopping experience ideas.
+                                        Looking forward to more articles like this one.
+                                    </p>
+                                    <button class="btn btn-sm btn-outline-dark" style="border-radius:8px; font-size:13px;">
+                                        <i class="bi bi-reply me-1"></i>Reply
+                                    </button>
+                                </div>
                             </div>
 
                         </div>
-                        
+
                         <!-- Comment Form -->
                         <div class="comment-form mt-5">
-                            
-                            <h3 class="mb-4">
-                                Leave A Comment
-                            </h3>
-                            
-                            <form>
-                                
+
+                            <h3 class="mb-4">Leave A Comment</h3>
+
+                            <!-- Success message -->
+                            <div id="commentSuccess" class="alert alert-success d-none" role="alert">
+                                <i class="bi bi-check-circle-fill me-2"></i>Your comment has been submitted!
+                            </div>
+
+                            <div id="commentFormFields">
+
                                 <div class="row">
-                                    
+
                                     <div class="col-md-6 mb-4">
-                                        
-                                        <input type="text"
+                                        <label for="commentName" class="form-label">
+                                            Name <span class="text-danger">*</span>
+                                        </label>
+                                        <input type="text" id="commentName"
                                             class="form-control comment-input"
-                                            placeholder="Your Name">
-                                        
+                                            placeholder="Your Name" required>
                                     </div>
-                                    
+
                                     <div class="col-md-6 mb-4">
-                                        
-                                        <input type="email"
+                                        <label for="commentEmail" class="form-label">
+                                            Email <span class="text-danger">*</span>
+                                        </label>
+                                        <input type="email" id="commentEmail"
                                             class="form-control comment-input"
-                                            placeholder="Your Email">
-                                        
+                                            placeholder="Your Email" required>
                                     </div>
-                                
+
                                 </div>
-                                
+
                                 <div class="mb-4">
-                                    
-                                    <textarea
-                                        rows="6"
+                                    <label for="commentText" class="form-label">
+                                        Comment <span class="text-danger">*</span>
+                                    </label>
+                                    <textarea rows="5" id="commentText"
                                         class="form-control comment-input"
-                                        placeholder="Your Comment"></textarea>
-                                    
+                                        placeholder="Write your comment..." required></textarea>
                                 </div>
-                                
-                                <button class="btn hero-btn">
-                                    
-                                    Submit Comment
-                                
+
+                                <button type="button" id="submitComment" class="btn hero-btn">
+                                    <i class="bi bi-send me-2"></i>Submit Comment
                                 </button>
-                            
-                            </form>
-                        
+
+                            </div>
+
                         </div>
-                    
-                    </div>
+
+                    </article>
 
                 </div>
 
@@ -517,101 +400,105 @@
 
                     <!-- Search -->
                     <div class="blog-sidebar">
-
-                        <h4>
-                            Search
-                        </h4>
-
-                        <input type="text"
-                            class="form-control sidebar-input"
-                            placeholder="Search blog...">
-
+                        <h4 class="mb-3">Search</h4>
+                        <div class="input-group">
+                            <input type="text" class="form-control sidebar-input"
+                                placeholder="Search blog..." aria-label="Search blog">
+                            <button class="btn btn-dark" type="button" aria-label="Submit search">
+                                <i class="bi bi-search"></i>
+                            </button>
+                        </div>
                     </div>
 
                     <!-- Categories -->
                     <div class="blog-sidebar">
-
-                        <h4>
-                            Categories
-                        </h4>
-
+                        <h4 class="mb-3">Categories</h4>
                         <ul class="blog-category-list">
-
                             <li>
-                                <a href="#">
-                                    Fashion
+                                <a href="#" class="d-flex justify-content-between align-items-center">
+                                    <span><i class="bi bi-chevron-right me-2" style="font-size:12px;"></i>Fashion</span>
+                                    <span class="badge bg-dark rounded-pill">12</span>
                                 </a>
                             </li>
-
                             <li>
-                                <a href="#">
-                                    Technology
+                                <a href="#" class="d-flex justify-content-between align-items-center">
+                                    <span><i class="bi bi-chevron-right me-2" style="font-size:12px;"></i>Technology</span>
+                                    <span class="badge bg-dark rounded-pill">8</span>
                                 </a>
                             </li>
-
                             <li>
-                                <a href="#">
-                                    Lifestyle
+                                <a href="#" class="d-flex justify-content-between align-items-center">
+                                    <span><i class="bi bi-chevron-right me-2" style="font-size:12px;"></i>Lifestyle</span>
+                                    <span class="badge bg-dark rounded-pill">5</span>
                                 </a>
                             </li>
-
                             <li>
-                                <a href="#">
-                                    Accessories
+                                <a href="#" class="d-flex justify-content-between align-items-center">
+                                    <span><i class="bi bi-chevron-right me-2" style="font-size:12px;"></i>Accessories</span>
+                                    <span class="badge bg-dark rounded-pill">7</span>
                                 </a>
                             </li>
-
+                            <li>
+                                <a href="#" class="d-flex justify-content-between align-items-center">
+                                    <span><i class="bi bi-chevron-right me-2" style="font-size:12px;"></i>Shoes</span>
+                                    <span class="badge bg-dark rounded-pill">4</span>
+                                </a>
+                            </li>
                         </ul>
-
                     </div>
 
                     <!-- Recent Posts -->
                     <div class="blog-sidebar">
-
-                        <h4>
-                            Recent Posts
-                        </h4>
+                        <h4 class="mb-3">Recent Posts</h4>
 
                         <div class="recent-post">
-
-                            <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?q=80&w=300"
-                                loading="lazy"
-                                alt="Post">
-
+                            <a href="blog-details.html">
+                                <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?q=80&w=300&auto=format&fit=crop"
+                                    loading="lazy" alt="New Fashion Collection">
+                            </a>
                             <div>
-
-                                <h6>
-                                    New Fashion Collection
-                                </h6>
-
-                                <small>
-                                    Jan 10, 2026
-                                </small>
-
+                                <h6><a href="blog-details.html" class="text-dark text-decoration-none">New Fashion Collection</a></h6>
+                                <small class="text-muted"><i class="bi bi-calendar3 me-1"></i>Jan 10, 2026</small>
                             </div>
-
                         </div>
 
                         <div class="recent-post">
-
-                            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=300"
-                                loading="lazy"
-                                alt="Post">
-
+                            <a href="blog-details.html">
+                                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=300&auto=format&fit=crop"
+                                    loading="lazy" alt="Modern Sneakers Guide">
+                            </a>
                             <div>
-
-                                <h6>
-                                    Modern Sneakers Guide
-                                </h6>
-
-                                <small>
-                                    Jan 14, 2026
-                                </small>
-
+                                <h6><a href="blog-details.html" class="text-dark text-decoration-none">Modern Sneakers Guide</a></h6>
+                                <small class="text-muted"><i class="bi bi-calendar3 me-1"></i>Jan 14, 2026</small>
                             </div>
-
                         </div>
 
+                        <div class="recent-post">
+                            <a href="blog-details.html">
+                                <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=300&auto=format&fit=crop"
+                                    loading="lazy" alt="Accessories Buying Guide">
+                            </a>
+                            <div>
+                                <h6><a href="blog-details.html" class="text-dark text-decoration-none">Premium Accessories Guide</a></h6>
+                                <small class="text-muted"><i class="bi bi-calendar3 me-1"></i>Jan 18, 2026</small>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Tags -->
+                    <div class="blog-sidebar">
+                        <h4 class="mb-3">Tags</h4>
+                        <div class="blog-tags">
+                            <a href="#">Fashion</a>
+                            <a href="#">Shoes</a>
+                            <a href="#">Technology</a>
+                            <a href="#">2026</a>
+                            <a href="#">Lifestyle</a>
+                            <a href="#">Sale</a>
+                            <a href="#">Accessories</a>
+                            <a href="#">Electronics</a>
+                        </div>
                     </div>
 
                 </div>
@@ -621,208 +508,130 @@
         </div>
 
     </section>
-
     <!-- Blog Section End -->
 
     <!-- Footer Start -->
     <footer class="footer-section">
-        
+
         <div class="container">
-            
+
             <div class="row g-5">
-                
-                <!-- About -->
+
                 <div class="col-lg-4">
-                    
-                    <h3 class="footer-logo">
-                        ModernShop
-                    </h3>
-                    
+                    <h3 class="footer-logo">ModernShop</h3>
                     <p class="footer-text mt-4">
                         Premium ecommerce experience with modern fashion,
                         quality products, and trusted customer service.
                     </p>
-                    
-                    <!-- Social Icons -->
                     <div class="footer-social mt-4">
-                        
-                        <a href="#">
-                            <i class="bi bi-facebook"></i>
-                        </a>
-                        
-                        <a href="#">
-                            <i class="bi bi-twitter-x"></i>
-                        </a>
-                        
-                        <a href="#">
-                            <i class="bi bi-instagram"></i>
-                        </a>
-                        
-                        <a href="#">
-                            <i class="bi bi-linkedin"></i>
-                        </a>
-                    
+                        <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
                     </div>
-                
                 </div>
-                
-                <!-- Quick Links -->
+
                 <div class="col-lg-2 col-md-6">
-                    
-                    <h5 class="footer-title">
-                        Quick Links
-                    </h5>
-                    
+                    <h5 class="footer-title">Quick Links</h5>
                     <ul class="footer-links">
-                        
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Shop</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html">Shop</a></li>
                         <li><a href="#">Categories</a></li>
-                        <li><a href="#">Contact</a></li>
-                    
+                        <li><a href="contact.html">Contact</a></li>
                     </ul>
-                
                 </div>
-                
-                <!-- Categories -->
+
                 <div class="col-lg-3 col-md-6">
-                    
-                    <h5 class="footer-title">
-                        Categories
-                    </h5>
-                    
+                    <h5 class="footer-title">Categories</h5>
                     <ul class="footer-links">
-
-                        <li><a href="#">Fashion</a></li>
-                        <li><a href="#">Electronics</a></li>
-                        <li><a href="#">Accessories</a></li>
-                        <li><a href="#">Shoes</a></li>
-                    
+                        <li><a href="shop.html">Fashion</a></li>
+                        <li><a href="shop.html">Electronics</a></li>
+                        <li><a href="shop.html">Accessories</a></li>
+                        <li><a href="shop.html">Shoes</a></li>
                     </ul>
-                
                 </div>
-                
-                <!-- Contact -->
+
                 <div class="col-lg-3">
-                    
-                    <h5 class="footer-title">
-                        Contact
-                    </h5>
-                    
+                    <h5 class="footer-title">Contact</h5>
                     <ul class="footer-contact">
-                        
-                        <li>
-                            <i class="bi bi-geo-alt"></i>
-                            Dhaka, Bangladesh
-                        </li>
-                        
-                        <li>
-                            <i class="bi bi-envelope"></i>
-                            meritpaul12@gmail.com
-                        </li>
-                        
-                        <li>
-                            <i class="bi bi-telephone"></i>
-                            +880 1812109812
-                        </li>
-                    
+                        <li><i class="bi bi-geo-alt"></i> Dhaka, Bangladesh</li>
+                        <li><i class="bi bi-envelope"></i> meritpaul12@gmail.com</li>
+                        <li><i class="bi bi-telephone"></i> +880 1812109812</li>
                     </ul>
-                
                 </div>
-            
-            </div>
-            
-            <!-- Copyright -->
-            <div class="footer-bottom text-center mt-5">
-                
-                <p>
-                    © 2026 ModernShop. All Rights Reserved.
-                </p>
-            
-            </div>
-        
-        </div>
-    
-    </footer>
-    
-    <!-- Footer End -->
-    
-    <!-- Mobile Bottom Navigation Start -->
 
+            </div>
+
+            <div class="footer-bottom text-center mt-5">
+                <p>© 2026 ModernShop. All Rights Reserved.</p>
+            </div>
+
+        </div>
+
+    </footer>
+    <!-- Footer End -->
+
+    <!-- Mobile Bottom Navigation Start -->
     <div class="mobile-nav">
 
-        <!-- Home -->
-        <a href="index.html"
-            class="mobile-nav-item active">
-
+        <a href="index.html" class="mobile-nav-item">
             <i class="bi bi-house-door"></i>
-
-            <span>
-                Home
-            </span>
-
+            <span>Home</span>
         </a>
 
-        <!-- Shop -->
-        <a href="shop.html"
-            class="mobile-nav-item">
-
+        <a href="shop.html" class="mobile-nav-item">
             <i class="bi bi-grid"></i>
-
-            <span>
-                Shop
-            </span>
-
+            <span>Shop</span>
         </a>
 
-        <!-- Cart -->
-        <a href="cart.html"
-            class="mobile-nav-item">
-
+        <a href="cart.html" class="mobile-nav-item">
             <i class="bi bi-cart3"></i>
-
-            <span>
-                Cart
-            </span>
-
+            <span>Cart</span>
         </a>
 
-        <!-- Wishlist -->
-        <a href="#"
-            class="mobile-nav-item">
-
+        <a href="#" class="mobile-nav-item">
             <i class="bi bi-heart"></i>
-
-            <span>
-                Wishlist
-            </span>
-
+            <span>Wishlist</span>
         </a>
 
-        <!-- Profile -->
-        <a href="#"
-            class="mobile-nav-item">
-
+        <a href="#" class="mobile-nav-item">
             <i class="bi bi-person"></i>
-
-            <span>
-                Profile
-            </span>
-
+            <span>Profile</span>
         </a>
 
     </div>
-
     <!-- Mobile Bottom Navigation End -->
-    
+
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    
+
     <!-- AOS JS -->
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 
     <!-- Custom JS -->
     <script src="assets/js/main.js"></script>
+
+    <!-- Comment Form Script -->
+    <script>
+        document.getElementById('submitComment').addEventListener('click', () => {
+            const name    = document.getElementById('commentName').value.trim();
+            const email   = document.getElementById('commentEmail').value.trim();
+            const comment = document.getElementById('commentText').value.trim();
+
+            if (!name || !email || !comment) {
+                alert('Please fill in all required fields.');
+                return;
+            }
+
+            if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+                alert('Please enter a valid email address.');
+                return;
+            }
+
+            document.getElementById('commentFormFields').classList.add('d-none');
+            document.getElementById('commentSuccess').classList.remove('d-none');
+        });
+    </script>
 
 </body>
 
