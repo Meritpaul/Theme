@@ -5,18 +5,17 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon"
-        type="image/png"
-        href="assets/images/favicon.png">
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
 
     <title>About Us - ModernShop</title>
 
-    <link rel="preconnect"
-        href="https://fonts.googleapis.com">
-        
-    <link rel="preconnect"
-        href="https://fonts.gstatic.com"
-        crossorigin>
+    <meta name="description"
+        content="Learn about ModernShop — our story, mission, and the team behind the premium ecommerce experience.">
+
+    <!-- Google Font: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -24,260 +23,140 @@
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-    <!-- AOS Animation -->
-    <link rel="stylesheet"
-        href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
-
     <link rel="stylesheet" href="assets/css/responsive.css">
+
 </head>
 
 <body>
 
     <!-- Preloader Start -->
-
     <div id="preloader">
-
         <div class="loader">
-
             <span></span>
             <span></span>
             <span></span>
-
         </div>
-
     </div>
-
-    <!-- Preloader End -->    
+    <!-- Preloader End -->
 
     <!-- Navbar Start -->
-
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top custom-navbar">
+    <nav class="navbar navbar-expand-lg fixed-top custom-navbar">
 
         <div class="container">
 
-            <!-- Logo -->
+            <a class="navbar-brand fw-bold fs-3" href="index.html">ModernShop</a>
 
-            <a class="navbar-brand fw-bold fs-3"
-                href="index.html">
-
-                ModernShop
-
-            </a>
-
-            <!-- Mobile Toggle -->
-
-            <button class="navbar-toggler"
-                type="button"
+            <button class="navbar-toggler border-0" type="button"
                 data-bs-toggle="collapse"
-                data-bs-target="#mainMenu">
-
+                data-bs-target="#mainMenu"
+                aria-controls="mainMenu"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-
             </button>
 
-            <!-- Menu -->
-
-            <div class="collapse navbar-collapse"
-                id="mainMenu">
-
-                <!-- Main Menu -->
+            <div class="collapse navbar-collapse" id="mainMenu">
 
                 <ul class="navbar-nav mx-auto">
 
                     <li class="nav-item">
-                        <a class="nav-link"
-                            href="index.html">
-
-                            Home
-
-                        </a>
+                        <a class="nav-link" href="index.html">Home</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link"
-                            href="shop.html">
-
-                            Shop
-
-                        </a>
+                        <a class="nav-link" href="shop.html">Shop</a>
                     </li>
 
                     <!-- Mega Menu -->
-
-                    <li class="nav-item dropdown mega-menu-item">
-
-                        <a class="nav-link dropdown-toggle"
-                            href="#">
-
-                            Categories
-
+                    <li class="nav-item mega-menu-item">
+                        <a class="nav-link" href="#">
+                            Categories <i class="bi bi-chevron-down ms-1" style="font-size:12px;"></i>
                         </a>
-
                         <div class="mega-menu">
-
                             <div class="row">
-
                                 <div class="col-lg-3">
-
-                                    <h5 class="mega-title">
-                                        Fashion
-                                    </h5>
-
+                                    <h5 class="mega-title">Fashion</h5>
                                     <ul class="mega-links">
-
                                         <li><a href="shop.html">Men Fashion</a></li>
                                         <li><a href="shop.html">Women Fashion</a></li>
                                         <li><a href="shop.html">Shoes</a></li>
                                         <li><a href="shop.html">Bags</a></li>
                                         <li><a href="shop.html">Accessories</a></li>
-
                                     </ul>
-
                                 </div>
-
                                 <div class="col-lg-3">
-
-                                    <h5 class="mega-title">
-                                        Electronics
-                                    </h5>
-
+                                    <h5 class="mega-title">Electronics</h5>
                                     <ul class="mega-links">
-
                                         <li><a href="shop.html">Smartphones</a></li>
                                         <li><a href="shop.html">Laptop</a></li>
                                         <li><a href="shop.html">Gaming</a></li>
                                         <li><a href="shop.html">Headphones</a></li>
                                         <li><a href="shop.html">Smart Watch</a></li>
-
                                     </ul>
-
                                 </div>
-
                                 <div class="col-lg-3">
-
-                                    <h5 class="mega-title">
-                                        Home & Living
-                                    </h5>
-
+                                    <h5 class="mega-title">Home & Living</h5>
                                     <ul class="mega-links">
-
                                         <li><a href="shop.html">Furniture</a></li>
                                         <li><a href="shop.html">Lighting</a></li>
                                         <li><a href="shop.html">Kitchen</a></li>
                                         <li><a href="shop.html">Decor</a></li>
                                         <li><a href="shop.html">Office Setup</a></li>
-
                                     </ul>
-
                                 </div>
-
                                 <div class="col-lg-3">
-
                                     <div class="mega-promo">
-
-                                        <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?q=80&w=1200&auto=format&fit=crop"
-                                            class="img-fluid"
-                                            alt="Sale">
-
+                                        <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?q=80&w=800&auto=format&fit=crop"
+                                            class="img-fluid" alt="Sale">
                                         <div class="mega-promo-content">
-
-                                            <h4>
-                                                Summer Sale
-                                            </h4>
-
-                                            <p>
-                                                Up To 50% Off
-                                            </p>
-
-                                            <a href="shop.html"
-                                                class="btn btn-light btn-sm">
-
-                                                Shop Now
-
-                                            </a>
-
+                                            <h4>Summer Sale</h4>
+                                            <p>Up To 50% Off</p>
+                                            <a href="shop.html" class="btn btn-light btn-sm mt-2">Shop Now</a>
                                         </div>
-
                                     </div>
-
                                 </div>
-
                             </div>
-
                         </div>
-
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link active"
-                            href="about.html">
-
-                            About
-
-                        </a>
+                        <a class="nav-link active" href="about.html">About</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link"
-                            href="blog.html">
-
-                            Blog
-
-                        </a>
+                        <a class="nav-link" href="blog.html">Blog</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link"
-                            href="faq.html">
-
-                            FAQ
-
-                        </a>
+                        <a class="nav-link" href="faq.html">FAQ</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link"
-                            href="contact.html">
-
-                            Contact
-
-                        </a>
+                        <a class="nav-link" href="contact.html">Contact</a>
                     </li>
 
                 </ul>
 
-                <!-- Right Icons -->
-
                 <div class="d-flex align-items-center gap-3">
 
-                    <button class="theme-toggle-btn"
-                        id="themeToggle">
-
+                    <button class="theme-toggle-btn" id="themeToggle" aria-label="Toggle dark mode">
                         <i class="bi bi-moon-fill"></i>
-
                     </button>
 
-                    <a href="#"
-                        class="text-dark fs-5">
-
+                    <a href="#" class="text-dark fs-5" aria-label="Search">
                         <i class="bi bi-search"></i>
-
                     </a>
 
-                    <a href="cart.html"
-                        class="text-dark fs-5 position-relative">
-
+                    <a href="cart.html" class="text-dark fs-5 position-relative" aria-label="Cart">
                         <i class="bi bi-cart3"></i>
-
                         <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-
                             2
-
                         </span>
-
                     </a>
 
                 </div>
@@ -287,28 +166,20 @@
         </div>
 
     </nav>
-
     <!-- Navbar End -->
 
     <!-- Page Banner Start -->
-
-    <section class="page-header">
-
-        <div class="container text-center">
-
-            <h1>About Us</h1>
-
-            <p>Home / About</p>
-
+    <section class="shop-banner" style="padding: 80px 0;">
+        <div class="container">
+            <h1 style="font-size:48px;">About Us</h1>
+            <p>
+                <a href="index.html" class="text-white text-decoration-none">Home</a> / About
+            </p>
         </div>
-
     </section>
-
     <!-- Page Banner End -->
 
-
     <!-- About Section Start -->
-
     <section class="about-section py-5">
 
         <div class="container">
@@ -316,83 +187,59 @@
             <div class="row align-items-center g-5">
 
                 <!-- Image -->
-                <div class="col-lg-6"
-                    data-aos="fade-right">
-
+                <div class="col-lg-6" data-aos="fade-right">
                     <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?q=80&w=1200&auto=format&fit=crop"
                         loading="lazy"
                         class="img-fluid rounded-4 shadow"
-                        alt="About">
-
+                        alt="About ModernShop">
                 </div>
 
                 <!-- Content -->
-                <div class="col-lg-6"
-                    data-aos="fade-left">
+                <div class="col-lg-6" data-aos="fade-left">
 
-                    <span class="about-subtitle">
-                        Our Story
-                    </span>
+                    <span class="about-subtitle">Our Story</span>
 
                     <h2 class="about-title mt-3">
-
-                        We Build Modern Ecommerce Experiences
-
+                        We Build Modern<br>E-commerce Experiences
                     </h2>
 
                     <p class="about-text mt-4">
-
-                        ModernShop is a premium ecommerce template
-                        designed for modern fashion and lifestyle brands.
-
+                        ModernShop is a premium e-commerce template designed for modern fashion
+                        and lifestyle brands. Founded in 2020, we've helped thousands of businesses
+                        build their online presence with beautiful, functional storefronts.
                     </p>
 
                     <p class="about-text">
-
-                        We focus on clean design, responsive layout,
-                        smooth shopping experience, and high-quality UI.
-
+                        We focus on clean design, responsive layout, smooth shopping experience,
+                        and high-quality UI components that delight customers and drive conversions.
                     </p>
 
                     <div class="about-features mt-4">
 
                         <div class="d-flex align-items-center mb-3">
-
                             <i class="bi bi-check-circle-fill"></i>
-
-                            <span>
-                                Premium Modern Design
-                            </span>
-
+                            <span class="ms-2">Premium Modern Design</span>
                         </div>
 
                         <div class="d-flex align-items-center mb-3">
-
                             <i class="bi bi-check-circle-fill"></i>
+                            <span class="ms-2">Fully Responsive Layout</span>
+                        </div>
 
-                            <span>
-                                Fully Responsive Layout
-                            </span>
-
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="bi bi-check-circle-fill"></i>
+                            <span class="ms-2">Easy Customization</span>
                         </div>
 
                         <div class="d-flex align-items-center">
-
                             <i class="bi bi-check-circle-fill"></i>
-
-                            <span>
-                                Easy Customization
-                            </span>
-
+                            <span class="ms-2">Dark Mode Support</span>
                         </div>
 
                     </div>
 
-                    <a href="shop.html"
-                        class="btn hero-btn mt-5">
-
+                    <a href="shop.html" class="btn hero-btn mt-5">
                         Explore Shop
-
                     </a>
 
                 </div>
@@ -402,87 +249,116 @@
         </div>
 
     </section>
-
     <!-- About Section End -->
 
-    <!-- Features Section Start -->
+    <!-- Stats Section Start -->
+    <section class="py-5" style="background:#f8f9fa;">
+        <div class="container">
+            <div class="row g-4 text-center" data-aos="fade-up">
 
+                <div class="col-lg-3 col-6">
+                    <div class="py-4">
+                        <h2 class="fw-800 mb-1" style="font-size:48px; font-weight:800;">10K+</h2>
+                        <p class="text-muted mb-0">Happy Customers</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-6">
+                    <div class="py-4">
+                        <h2 class="fw-800 mb-1" style="font-size:48px; font-weight:800;">500+</h2>
+                        <p class="text-muted mb-0">Products Listed</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-6">
+                    <div class="py-4">
+                        <h2 class="fw-800 mb-1" style="font-size:48px; font-weight:800;">50+</h2>
+                        <p class="text-muted mb-0">Brand Partners</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-6">
+                    <div class="py-4">
+                        <h2 class="fw-800 mb-1" style="font-size:48px; font-weight:800;">6+</h2>
+                        <p class="text-muted mb-0">Years Experience</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Stats Section End -->
+
+    <!-- Features Section Start -->
     <section class="features-section py-5">
 
         <div class="container">
 
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="section-title">Why Choose Us</h2>
+                <p class="section-text mt-2">We go above and beyond for every customer.</p>
+            </div>
+
             <div class="row g-4">
 
-                <!-- Feature -->
-                <div class="col-lg-4 col-md-6"
-                    data-aos="fade-up">
-
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="0">
                     <div class="feature-box text-center">
-
                         <div class="feature-icon">
-
                             <i class="bi bi-truck"></i>
-
                         </div>
-
-                        <h4>
-                            Free Shipping
-                        </h4>
-
-                        <p>
-                            Worldwide delivery with fast shipping service.
-                        </p>
-
+                        <h4>Free Shipping</h4>
+                        <p class="text-muted">Worldwide delivery with fast and reliable shipping service on all orders.</p>
                     </div>
-
                 </div>
 
-                <!-- Feature -->
-                <div class="col-lg-4 col-md-6"
-                    data-aos="fade-up">
-
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
                     <div class="feature-box text-center">
-
                         <div class="feature-icon">
-
                             <i class="bi bi-shield-check"></i>
-
                         </div>
-
-                        <h4>
-                            Secure Payment
-                        </h4>
-
-                        <p>
-                            100% secure online payment system.
-                        </p>
-
+                        <h4>Secure Payment</h4>
+                        <p class="text-muted">100% secure online payment system with encrypted transactions.</p>
                     </div>
-
                 </div>
 
-                <!-- Feature -->
-                <div class="col-lg-4 col-md-6"
-                    data-aos="fade-up">
-
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
                     <div class="feature-box text-center">
-
                         <div class="feature-icon">
-
                             <i class="bi bi-headset"></i>
-
                         </div>
-
-                        <h4>
-                            24/7 Support
-                        </h4>
-
-                        <p>
-                            Dedicated support team always ready to help.
-                        </p>
-
+                        <h4>24/7 Support</h4>
+                        <p class="text-muted">Dedicated support team always ready to help you anytime.</p>
                     </div>
+                </div>
 
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="0">
+                    <div class="feature-box text-center">
+                        <div class="feature-icon">
+                            <i class="bi bi-arrow-repeat"></i>
+                        </div>
+                        <h4>Easy Returns</h4>
+                        <p class="text-muted">Hassle-free 30-day return policy on all products.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-box text-center">
+                        <div class="feature-icon">
+                            <i class="bi bi-award"></i>
+                        </div>
+                        <h4>Quality Products</h4>
+                        <p class="text-muted">Every product is carefully curated and quality-checked.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-box text-center">
+                        <div class="feature-icon">
+                            <i class="bi bi-geo-alt"></i>
+                        </div>
+                        <h4>Global Delivery</h4>
+                        <p class="text-muted">We ship to over 80 countries worldwide with tracking.</p>
+                    </div>
                 </div>
 
             </div>
@@ -490,109 +366,63 @@
         </div>
 
     </section>
-
     <!-- Features Section End -->
 
     <!-- Team Section Start -->
-
-    <section class="team-section py-5">
+    <section class="team-section py-5" style="background:#f8f9fa;">
 
         <div class="container">
 
-            <!-- Title -->
-            <div class="text-center mb-5">
-
-                <h2 class="section-title">
-                    Meet Our Team
-                </h2>
-
-                <p class="section-text">
-                    Creative people behind ModernShop.
-                </p>
-
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="section-title">Meet Our Team</h2>
+                <p class="section-text mt-2">Creative people behind ModernShop.</p>
             </div>
 
-            <div class="row g-4">
+            <div class="row g-4 justify-content-center">
 
-                <!-- Team Item -->
-                <div class="col-lg-4 col-md-6"
-                    data-aos="zoom-in">
-
+                <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="0">
                     <div class="team-card">
-
-                        <img src="https://randomuser.me/api/portraits/men/32.jpg"
-                            loading="lazy"
-                            class="img-fluid"
-                            alt="Team">
-
+                        <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=800&auto=format&fit=crop"
+                            loading="lazy" class="img-fluid" alt="Emma Johnson">
                         <div class="team-content">
-
-                            <h5>
-                                David Johnson
-                            </h5>
-
-                            <span>
-                                CEO & Founder
-                            </span>
-
+                            <h5>Emma Johnson</h5>
+                            <span class="text-muted">CEO & Founder</span>
+                            <div class="footer-social justify-content-center mt-3">
+                                <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                                <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+                            </div>
                         </div>
-
                     </div>
-
                 </div>
 
-                <!-- Team Item -->
-                <div class="col-lg-4 col-md-6"
-                    data-aos="zoom-in">
-
+                <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="100">
                     <div class="team-card">
-
-                        <img src="https://randomuser.me/api/portraits/women/44.jpg"
-                            loading="lazy"
-                            class="img-fluid"
-                            alt="Team">
-
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=800&auto=format&fit=crop"
+                            loading="lazy" class="img-fluid" alt="Sarah Smith">
                         <div class="team-content">
-
-                            <h5>
-                                Sarah Smith
-                            </h5>
-
-                            <span>
-                                Creative Designer
-                            </span>
-
+                            <h5>Sarah Smith</h5>
+                            <span class="text-muted">Creative Designer</span>
+                            <div class="footer-social justify-content-center mt-3">
+                                <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                                <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+                            </div>
                         </div>
-
                     </div>
-
                 </div>
 
-                <!-- Team Item -->
-                <div class="col-lg-4 col-md-6"
-                    data-aos="zoom-in">
-
+                <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
                     <div class="team-card">
-
-                        <img src="https://randomuser.me/api/portraits/men/68.jpg"
-                            loading="lazy"
-                            class="img-fluid"
-                            alt="Team">
-
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=800&auto=format&fit=crop"
+                            loading="lazy" class="img-fluid" alt="Michael Lee">
                         <div class="team-content">
-
-                            <h5>
-                                Michael Lee
-                            </h5>
-
-                            <span>
-                                Marketing Expert
-                            </span>
-
+                            <h5>Michael Lee</h5>
+                            <span class="text-muted">Marketing Expert</span>
+                            <div class="footer-social justify-content-center mt-3">
+                                <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                                <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+                            </div>
                         </div>
-
                     </div>
-
                 </div>
 
             </div>
@@ -600,306 +430,103 @@
         </div>
 
     </section>
-
     <!-- Team Section End -->
 
     <!-- Footer Start -->
     <footer class="footer-section">
-        
+
         <div class="container">
-            
+
             <div class="row g-5">
-                
-                <!-- About -->
+
                 <div class="col-lg-4">
-                    
-                    <h3 class="footer-logo">
-                        ModernShop
-                    </h3>
-                    
+                    <h3 class="footer-logo">ModernShop</h3>
                     <p class="footer-text mt-4">
                         Premium ecommerce experience with modern fashion,
                         quality products, and trusted customer service.
                     </p>
-                    
-                    <!-- Social Icons -->
                     <div class="footer-social mt-4">
-                        
-                        <a href="#">
-                            <i class="bi bi-facebook"></i>
-                        </a>
-                        
-                        <a href="#">
-                            <i class="bi bi-twitter-x"></i>
-                        </a>
-                        
-                        <a href="#">
-                            <i class="bi bi-instagram"></i>
-                        </a>
-                        
-                        <a href="#">
-                            <i class="bi bi-linkedin"></i>
-                        </a>
-                    
+                        <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
                     </div>
-                
                 </div>
-                
-                <!-- Quick Links -->
+
                 <div class="col-lg-2 col-md-6">
-                    
-                    <h5 class="footer-title">
-                        Quick Links
-                    </h5>
-                    
+                    <h5 class="footer-title">Quick Links</h5>
                     <ul class="footer-links">
-                        
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Shop</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html">Shop</a></li>
                         <li><a href="#">Categories</a></li>
-                        <li><a href="#">Contact</a></li>
-                    
+                        <li><a href="contact.html">Contact</a></li>
                     </ul>
-                
                 </div>
-                
-                <!-- Categories -->
+
                 <div class="col-lg-3 col-md-6">
-                    
-                    <h5 class="footer-title">
-                        Categories
-                    </h5>
-                    
+                    <h5 class="footer-title">Categories</h5>
                     <ul class="footer-links">
-
-                        <li><a href="#">Fashion</a></li>
-                        <li><a href="#">Electronics</a></li>
-                        <li><a href="#">Accessories</a></li>
-                        <li><a href="#">Shoes</a></li>
-                    
+                        <li><a href="shop.html">Fashion</a></li>
+                        <li><a href="shop.html">Electronics</a></li>
+                        <li><a href="shop.html">Accessories</a></li>
+                        <li><a href="shop.html">Shoes</a></li>
                     </ul>
-                
                 </div>
-                
-                <!-- Contact -->
+
                 <div class="col-lg-3">
-                    
-                    <h5 class="footer-title">
-                        Contact
-                    </h5>
-                    
+                    <h5 class="footer-title">Contact</h5>
                     <ul class="footer-contact">
-                        
-                        <li>
-                            <i class="bi bi-geo-alt"></i>
-                            Dhaka, Bangladesh
-                        </li>
-                        
-                        <li>
-                            <i class="bi bi-envelope"></i>
-                            meritpaul12@gmail.com
-                        </li>
-                        
-                        <li>
-                            <i class="bi bi-telephone"></i>
-                            +880 1812109812
-                        </li>
-                    
+                        <li><i class="bi bi-geo-alt"></i> Dhaka, Bangladesh</li>
+                        <li><i class="bi bi-envelope"></i> meritpaul12@gmail.com</li>
+                        <li><i class="bi bi-telephone"></i> +880 1812109812</li>
                     </ul>
-                
                 </div>
-            
+
             </div>
-            
-            <!-- Copyright -->
+
             <div class="footer-bottom text-center mt-5">
-                
-                <p>
-                    © 2026 ModernShop. All Rights Reserved.
-                </p>
-            
+                <p>© 2026 ModernShop. All Rights Reserved.</p>
             </div>
-        
+
         </div>
-    
+
     </footer>
-    
     <!-- Footer End -->
-    
-    <!-- Quick View Modal Start -->
 
-    <div class="modal fade"
-        id="quickViewModal"
-        tabindex="-1">
-
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-
-            <div class="modal-content quick-view-modal">
-
-                <div class="modal-body p-0">
-
-                    <div class="row g-0 align-items-center">
-
-                        <!-- Product Image -->
-                        <div class="col-lg-6">
-
-                            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=1200&auto=format&fit=crop"
-                                class="img-fluid quick-view-image"
-                                alt="Product">
-
-                        </div>
-
-                        <!-- Product Info -->
-                        <div class="col-lg-6">
-
-                            <div class="quick-view-content">
-
-                                <h3>
-                                    Modern Sneakers
-                                </h3>
-
-                                <!-- Rating -->
-                                <div class="product-rating my-3">
-
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star-half"></i>
-
-                                </div>
-
-                                <!-- Price -->
-                                <div class="product-details-price mb-4">
-
-                                    <span class="details-new-price">
-                                        $89
-                                    </span>
-
-                                    <span class="details-old-price">
-                                        $120
-                                    </span>
-
-                                </div>
-
-                                <!-- Description -->
-                                <p class="product-description">
-
-                                    Premium quality sneakers designed for
-                                    comfort and modern lifestyle.
-
-                                </p>
-
-                                <!-- Quantity -->
-                                <input type="number"
-                                    value="1"
-                                    min="1"
-                                    class="form-control quantity-input my-4">
-
-                                <!-- Buttons -->
-                                <div class="d-flex gap-3">
-
-                                    <a href="#"
-                                        class="btn product-details-btn">
-
-                                        Add To Cart
-                                    </a>
-
-                                    <a href="#"
-                                        class="btn btn-outline-dark">
-
-                                        View Details
-                                    </a>
-
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-    <!-- Quick View Modal End -->
-    
     <!-- Mobile Bottom Navigation Start -->
-
     <div class="mobile-nav">
 
-        <!-- Home -->
-        <a href="index.html"
-            class="mobile-nav-item active">
-
+        <a href="index.html" class="mobile-nav-item">
             <i class="bi bi-house-door"></i>
-
-            <span>
-                Home
-            </span>
-
+            <span>Home</span>
         </a>
 
-        <!-- Shop -->
-        <a href="shop.html"
-            class="mobile-nav-item">
-
+        <a href="shop.html" class="mobile-nav-item">
             <i class="bi bi-grid"></i>
-
-            <span>
-                Shop
-            </span>
-
+            <span>Shop</span>
         </a>
 
-        <!-- Cart -->
-        <a href="cart.html"
-            class="mobile-nav-item">
-
+        <a href="cart.html" class="mobile-nav-item">
             <i class="bi bi-cart3"></i>
-
-            <span>
-                Cart
-            </span>
-
+            <span>Cart</span>
         </a>
 
-        <!-- Wishlist -->
-        <a href="#"
-            class="mobile-nav-item">
-
+        <a href="#" class="mobile-nav-item">
             <i class="bi bi-heart"></i>
-
-            <span>
-                Wishlist
-            </span>
-
+            <span>Wishlist</span>
         </a>
 
-        <!-- Profile -->
-        <a href="#"
-            class="mobile-nav-item">
-
+        <a href="#" class="mobile-nav-item">
             <i class="bi bi-person"></i>
-
-            <span>
-                Profile
-            </span>
-
+            <span>Profile</span>
         </a>
 
     </div>
-
     <!-- Mobile Bottom Navigation End -->
-    
+
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    
+
     <!-- AOS JS -->
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 

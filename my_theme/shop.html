@@ -5,18 +5,17 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon"
-        type="image/png"
-        href="assets/images/favicon.png">
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
 
     <title>Shop - ModernShop</title>
 
-    <link rel="preconnect"
-        href="https://fonts.googleapis.com">
-        
-    <link rel="preconnect"
-        href="https://fonts.gstatic.com"
-        crossorigin>
+    <meta name="description"
+        content="Browse our full collection of premium fashion, electronics, shoes and accessories at ModernShop.">
+
+    <!-- Google Font: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -24,260 +23,152 @@
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
 
-    <!-- AOS CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
-
-    <!-- AOS JS -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 
 <body>
 
     <!-- Preloader Start -->
-
     <div id="preloader">
-
         <div class="loader">
-
             <span></span>
             <span></span>
             <span></span>
-
         </div>
-
     </div>
-
-    <!-- Preloader End -->    
+    <!-- Preloader End -->
 
     <!-- Navbar Start -->
-
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top custom-navbar">
+    <nav class="navbar navbar-expand-lg fixed-top custom-navbar">
 
         <div class="container">
 
             <!-- Logo -->
-
-            <a class="navbar-brand fw-bold fs-3"
-                href="index.html">
-
-                ModernShop
-
-            </a>
+            <a class="navbar-brand fw-bold fs-3" href="index.html">ModernShop</a>
 
             <!-- Mobile Toggle -->
-
-            <button class="navbar-toggler"
-                type="button"
+            <button class="navbar-toggler border-0" type="button"
                 data-bs-toggle="collapse"
-                data-bs-target="#mainMenu">
-
+                data-bs-target="#mainMenu"
+                aria-controls="mainMenu"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-
             </button>
 
             <!-- Menu -->
-
-            <div class="collapse navbar-collapse"
-                id="mainMenu">
-
-                <!-- Main Menu -->
+            <div class="collapse navbar-collapse" id="mainMenu">
 
                 <ul class="navbar-nav mx-auto">
 
                     <li class="nav-item">
-                        <a class="nav-link"
-                            href="index.html">
-
-                            Home
-
-                        </a>
+                        <a class="nav-link" href="index.html">Home</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link active"
-                            href="shop.html">
-
-                            Shop
-
-                        </a>
+                        <a class="nav-link active" href="shop.html">Shop</a>
                     </li>
 
                     <!-- Mega Menu -->
+                    <li class="nav-item mega-menu-item">
 
-                    <li class="nav-item dropdown mega-menu-item">
-
-                        <a class="nav-link dropdown-toggle"
-                            href="#">
-
-                            Categories
-
+                        <a class="nav-link" href="#">
+                            Categories <i class="bi bi-chevron-down ms-1" style="font-size:12px;"></i>
                         </a>
 
                         <div class="mega-menu">
-
                             <div class="row">
 
                                 <div class="col-lg-3">
-
-                                    <h5 class="mega-title">
-                                        Fashion
-                                    </h5>
-
+                                    <h5 class="mega-title">Fashion</h5>
                                     <ul class="mega-links">
-
                                         <li><a href="shop.html">Men Fashion</a></li>
                                         <li><a href="shop.html">Women Fashion</a></li>
                                         <li><a href="shop.html">Shoes</a></li>
                                         <li><a href="shop.html">Bags</a></li>
                                         <li><a href="shop.html">Accessories</a></li>
-
                                     </ul>
-
                                 </div>
 
                                 <div class="col-lg-3">
-
-                                    <h5 class="mega-title">
-                                        Electronics
-                                    </h5>
-
+                                    <h5 class="mega-title">Electronics</h5>
                                     <ul class="mega-links">
-
                                         <li><a href="shop.html">Smartphones</a></li>
                                         <li><a href="shop.html">Laptop</a></li>
                                         <li><a href="shop.html">Gaming</a></li>
                                         <li><a href="shop.html">Headphones</a></li>
                                         <li><a href="shop.html">Smart Watch</a></li>
-
                                     </ul>
-
                                 </div>
 
                                 <div class="col-lg-3">
-
-                                    <h5 class="mega-title">
-                                        Home & Living
-                                    </h5>
-
+                                    <h5 class="mega-title">Home & Living</h5>
                                     <ul class="mega-links">
-
                                         <li><a href="shop.html">Furniture</a></li>
                                         <li><a href="shop.html">Lighting</a></li>
                                         <li><a href="shop.html">Kitchen</a></li>
                                         <li><a href="shop.html">Decor</a></li>
                                         <li><a href="shop.html">Office Setup</a></li>
-
                                     </ul>
-
                                 </div>
 
                                 <div class="col-lg-3">
-
                                     <div class="mega-promo">
-
-                                        <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?q=80&w=1200&auto=format&fit=crop"
-                                            class="img-fluid"
-                                            alt="Sale">
-
+                                        <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?q=80&w=800&auto=format&fit=crop"
+                                            class="img-fluid" alt="Sale">
                                         <div class="mega-promo-content">
-
-                                            <h4>
-                                                Summer Sale
-                                            </h4>
-
-                                            <p>
-                                                Up To 50% Off
-                                            </p>
-
-                                            <a href="shop.html"
-                                                class="btn btn-light btn-sm">
-
-                                                Shop Now
-
-                                            </a>
-
+                                            <h4>Summer Sale</h4>
+                                            <p>Up To 50% Off</p>
+                                            <a href="shop.html" class="btn btn-light btn-sm mt-2">Shop Now</a>
                                         </div>
-
                                     </div>
-
                                 </div>
 
                             </div>
-
                         </div>
 
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link"
-                            href="about.html">
-
-                            About
-
-                        </a>
+                        <a class="nav-link" href="about.html">About</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link"
-                            href="blog.html">
-
-                            Blog
-
-                        </a>
+                        <a class="nav-link" href="blog.html">Blog</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link"
-                            href="faq.html">
-
-                            FAQ
-
-                        </a>
+                        <a class="nav-link" href="faq.html">FAQ</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link"
-                            href="contact.html">
-
-                            Contact
-
-                        </a>
+                        <a class="nav-link" href="contact.html">Contact</a>
                     </li>
 
                 </ul>
 
                 <!-- Right Icons -->
-
                 <div class="d-flex align-items-center gap-3">
 
-                    <button class="theme-toggle-btn"
-                        id="themeToggle">
-
+                    <button class="theme-toggle-btn" id="themeToggle" aria-label="Toggle dark mode">
                         <i class="bi bi-moon-fill"></i>
-
                     </button>
 
-                    <a href="#"
-                        class="text-dark fs-5">
-
+                    <a href="#" class="text-dark fs-5" aria-label="Search">
                         <i class="bi bi-search"></i>
-
                     </a>
 
-                    <a href="cart.html"
-                        class="text-dark fs-5 position-relative">
-
+                    <a href="cart.html" class="text-dark fs-5 position-relative" aria-label="Cart">
                         <i class="bi bi-cart3"></i>
-
                         <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-
                             2
-
                         </span>
-
                     </a>
 
                 </div>
@@ -287,700 +178,534 @@
         </div>
 
     </nav>
-
     <!-- Navbar End -->
 
     <!-- Page Banner Start -->
-
-    <section class="page-header">
-
-        <div class="container text-center">
-
+    <section class="shop-banner">
+        <div class="container">
             <h1>Shop Products</h1>
-
             <p>Home / Shop</p>
-
         </div>
-
     </section>
-
     <!-- Page Banner End -->
-
 
     <!-- Shop Section Start -->
     <section class="shop-section py-5">
-        
+
         <div class="container">
-            
+
             <div class="row">
-                
+
                 <!-- Sidebar -->
-                <div class="col-lg-3">
-                    
+                <div class="col-lg-3 mb-4 mb-lg-0">
+
                     <div class="shop-sidebar">
-                        
+
                         <!-- Search -->
                         <div class="sidebar-widget">
-                            
-                            <h5>
-                                Search
-                            </h5>
-                            
-                            <input type="text"
-                                class="form-control"
-                                placeholder="Search products">
-                        
+                            <h5>Search</h5>
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Search products"
+                                    aria-label="Search products">
+                                <button class="btn btn-dark" type="button" aria-label="Submit search">
+                                    <i class="bi bi-search"></i>
+                                </button>
+                            </div>
                         </div>
-                        
+
                         <!-- Categories -->
                         <div class="sidebar-widget">
-                            
-                            <h5>
-                                Categories
-                            </h5>
-                            
+                            <h5>Categories</h5>
                             <ul>
-
+                                <li><a href="#">All Products</a></li>
                                 <li><a href="#">Fashion</a></li>
                                 <li><a href="#">Electronics</a></li>
                                 <li><a href="#">Shoes</a></li>
                                 <li><a href="#">Accessories</a></li>
-                            
+                                <li><a href="#">Home & Living</a></li>
                             </ul>
-                        
                         </div>
-                        
-                        <!-- Filter -->
+
+                        <!-- Price Filter -->
                         <div class="sidebar-widget">
-                            
-                            <h5>
-                                Filter By Price
-                            </h5>
-                            
-                            <input type="range"
-                                class="form-range">
-                        
+                            <h5>Filter By Price</h5>
+                            <input type="range" class="form-range" id="priceRange"
+                                min="0" max="1000" value="500"
+                                aria-label="Price range filter">
+                            <div class="d-flex justify-content-between mt-2" style="font-size:14px; color:#666;">
+                                <span>$0</span>
+                                <span id="priceValue">$500</span>
+                                <span>$1000</span>
+                            </div>
                         </div>
-                    
+
+                        <!-- Ratings Filter -->
+                        <div class="sidebar-widget mb-0">
+                            <h5>Filter By Rating</h5>
+                            <ul>
+                                <li>
+                                    <a href="#" class="d-flex align-items-center gap-2">
+                                        <span style="color:#f4b400;">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                        </span>
+                                        <small>(24)</small>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="d-flex align-items-center gap-2">
+                                        <span style="color:#f4b400;">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star"></i>
+                                        </span>
+                                        <small>(18)</small>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="d-flex align-items-center gap-2">
+                                        <span style="color:#f4b400;">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star"></i>
+                                            <i class="bi bi-star"></i>
+                                        </span>
+                                        <small>(9)</small>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
                     </div>
-                
+
                 </div>
-                
+
                 <!-- Products -->
                 <div class="col-lg-9">
-                    
+
                     <!-- Top Bar -->
                     <div class="shop-topbar">
-                        
-                        <p>
-                            Showing 12 Products
-                        </p>
-                        
-                        <select class="form-select">
-                            
-                            <option>
-                                Default Sorting
-                            </option>
-                            
-                            <option>
-                                Latest Products
-                            </option>
-
-                            <option>
-                                Low To High
-                            </option>
-
-                            <option>
-                                High To Low
-                            </option>
-                        
+                        <p class="mb-0">Showing <strong>12</strong> Products</p>
+                        <select class="form-select" style="width:220px;" aria-label="Sort products">
+                            <option>Default Sorting</option>
+                            <option>Latest Products</option>
+                            <option>Price: Low To High</option>
+                            <option>Price: High To Low</option>
+                            <option>Top Rated</option>
                         </select>
-                    
                     </div>
-                    
+
                     <!-- Product Grid -->
-                    <div class="row g-4 mt-1">
-                        
-                        <!-- Product Item -->
-                        <div class="col-lg-4 col-md-6">
-                            
+                    <div class="row g-4">
+
+                        <!-- Product 1 -->
+                        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="0">
                             <div class="product-card">
-                                
-                                <a href="#" class="wishlist-btn">
+                                <span class="product-badge">Sale</span>
+                                <a href="#" class="wishlist-btn" aria-label="Add to wishlist">
                                     <i class="bi bi-heart"></i>
                                 </a>
-                                
                                 <div class="product-image">
-                                    
-                                    <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?q=80&w=800&auto=format&fit=crop"
-                                        alt="Product">
-                                    
-                                </div>
-                                
-                                <div class="product-content">
-                                    
-                                    <h5>
-                                        Premium T-Shirt
-                                    </h5>
-                                    
-                                    <div class="product-price mb-3">
-                                        
-                                        <span class="new-price">
-                                            $49
-                                        </span>
-                                    
-                                    </div>
-                                    
-                                    <a href="#" class="btn product-btn w-100">
-                                        Add To Cart
+                                    <a href="product.html">
+                                        <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?q=80&w=800&auto=format&fit=crop"
+                                            loading="lazy" alt="Premium T-Shirt">
                                     </a>
-                                
                                 </div>
-                            
+                                <div class="product-content">
+                                    <h5><a href="product.html" class="text-dark text-decoration-none">Premium T-Shirt</a></h5>
+                                    <div class="product-rating mb-2">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-half"></i>
+                                    </div>
+                                    <div class="product-price mb-3">
+                                        <span class="new-price">$49</span>
+                                        <span class="old-price">$70</span>
+                                    </div>
+                                    <a href="#" class="btn product-btn w-100">Add To Cart</a>
+                                </div>
                             </div>
-                        
                         </div>
-                        
-                        <!-- Product Item -->
-                        <div class="col-lg-4 col-md-6">
-                            
+
+                        <!-- Product 2 -->
+                        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
                             <div class="product-card">
-                                
-                                <a href="#" class="wishlist-btn">
+                                <a href="#" class="wishlist-btn" aria-label="Add to wishlist">
                                     <i class="bi bi-heart"></i>
                                 </a>
-                                
                                 <div class="product-image">
-                                    
-                                    <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=800&auto=format&fit=crop"
-                                        alt="Product">
-                                    
-                                </div>
-                                
-                                <div class="product-content">
-                                    
-                                    <h5>
-                                        Modern Sneakers
-                                    </h5>
-                                    
-                                    <div class="product-price mb-3">
-                                        
-                                        <span class="new-price">
-                                            $89
-                                        </span>
-                                    
-                                    </div>
-                                    
-                                    <a href="#" class="btn product-btn w-100">
-                                        Add To Cart
+                                    <a href="product.html">
+                                        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=800&auto=format&fit=crop"
+                                            loading="lazy" alt="Modern Sneakers">
                                     </a>
-                                
                                 </div>
-                            
+                                <div class="product-content">
+                                    <h5><a href="product.html" class="text-dark text-decoration-none">Modern Sneakers</a></h5>
+                                    <div class="product-rating mb-2">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star"></i>
+                                    </div>
+                                    <div class="product-price mb-3">
+                                        <span class="new-price">$89</span>
+                                    </div>
+                                    <a href="#" class="btn product-btn w-100">Add To Cart</a>
+                                </div>
                             </div>
-                        
                         </div>
-                        
-                        <!-- Product Item -->
-                        <div class="col-lg-4 col-md-6">
-                            
+
+                        <!-- Product 3 -->
+                        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
                             <div class="product-card">
-                                
-                                <a href="#" class="wishlist-btn">
+                                <span class="product-badge">New</span>
+                                <a href="#" class="wishlist-btn" aria-label="Add to wishlist">
                                     <i class="bi bi-heart"></i>
                                 </a>
-                                
                                 <div class="product-image">
-                                    
-                                    <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=800&auto=format&fit=crop"
-                                        alt="Product">
-                                    
-                                </div>
-                                
-                                <div class="product-content">
-                                    
-                                    <h5>
-                                        Wireless Headphone
-                                    </h5>
-                                    
-                                    <div class="product-price mb-3">
-                                        
-                                        <span class="new-price">
-                                            $120
-                                        </span>
-                                    
-                                    </div>
-                                    
-                                    <a href="#" class="btn product-btn w-100">
-                                        Add To Cart
+                                    <a href="product.html">
+                                        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=800&auto=format&fit=crop"
+                                            loading="lazy" alt="Wireless Headphone">
                                     </a>
-                                
                                 </div>
-                            
+                                <div class="product-content">
+                                    <h5><a href="product.html" class="text-dark text-decoration-none">Wireless Headphone</a></h5>
+                                    <div class="product-rating mb-2">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                    </div>
+                                    <div class="product-price mb-3">
+                                        <span class="new-price">$120</span>
+                                    </div>
+                                    <a href="#" class="btn product-btn w-100">Add To Cart</a>
+                                </div>
                             </div>
-                        
                         </div>
-                    
+
+                        <!-- Product 4 -->
+                        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="0">
+                            <div class="product-card">
+                                <a href="#" class="wishlist-btn" aria-label="Add to wishlist">
+                                    <i class="bi bi-heart"></i>
+                                </a>
+                                <div class="product-image">
+                                    <a href="product.html">
+                                        <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?q=80&w=800&auto=format&fit=crop"
+                                            loading="lazy" alt="Smartphone Pro">
+                                    </a>
+                                </div>
+                                <div class="product-content">
+                                    <h5><a href="product.html" class="text-dark text-decoration-none">Smartphone Pro</a></h5>
+                                    <div class="product-rating mb-2">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-half"></i>
+                                        <i class="bi bi-star"></i>
+                                    </div>
+                                    <div class="product-price mb-3">
+                                        <span class="new-price">$799</span>
+                                        <span class="old-price">$950</span>
+                                    </div>
+                                    <a href="#" class="btn product-btn w-100">Add To Cart</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Product 5 -->
+                        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                            <div class="product-card">
+                                <span class="product-badge">Hot</span>
+                                <a href="#" class="wishlist-btn" aria-label="Add to wishlist">
+                                    <i class="bi bi-heart"></i>
+                                </a>
+                                <div class="product-image">
+                                    <a href="product.html">
+                                        <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=800&auto=format&fit=crop"
+                                            loading="lazy" alt="Smart Watch">
+                                    </a>
+                                </div>
+                                <div class="product-content">
+                                    <h5><a href="product.html" class="text-dark text-decoration-none">Smart Watch</a></h5>
+                                    <div class="product-rating mb-2">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                    </div>
+                                    <div class="product-price mb-3">
+                                        <span class="new-price">$199</span>
+                                        <span class="old-price">$249</span>
+                                    </div>
+                                    <a href="#" class="btn product-btn w-100">Add To Cart</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Product 6 -->
+                        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                            <div class="product-card">
+                                <a href="#" class="wishlist-btn" aria-label="Add to wishlist">
+                                    <i class="bi bi-heart"></i>
+                                </a>
+                                <div class="product-image">
+                                    <a href="product.html">
+                                        <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?q=80&w=800&auto=format&fit=crop"
+                                            loading="lazy" alt="Leather Backpack">
+                                    </a>
+                                </div>
+                                <div class="product-content">
+                                    <h5><a href="product.html" class="text-dark text-decoration-none">Leather Backpack</a></h5>
+                                    <div class="product-rating mb-2">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star"></i>
+                                    </div>
+                                    <div class="product-price mb-3">
+                                        <span class="new-price">$65</span>
+                                    </div>
+                                    <a href="#" class="btn product-btn w-100">Add To Cart</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Product 7 -->
+                        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="0">
+                            <div class="product-card">
+                                <span class="product-badge">Sale</span>
+                                <a href="#" class="wishlist-btn" aria-label="Add to wishlist">
+                                    <i class="bi bi-heart"></i>
+                                </a>
+                                <div class="product-image">
+                                    <a href="product.html">
+                                        <img src="https://images.unsplash.com/photo-1434056886845-dac89ffe9b56?q=80&w=800&auto=format&fit=crop"
+                                            loading="lazy" alt="Sunglasses">
+                                    </a>
+                                </div>
+                                <div class="product-content">
+                                    <h5><a href="product.html" class="text-dark text-decoration-none">Sunglasses</a></h5>
+                                    <div class="product-rating mb-2">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-half"></i>
+                                    </div>
+                                    <div class="product-price mb-3">
+                                        <span class="new-price">$35</span>
+                                        <span class="old-price">$55</span>
+                                    </div>
+                                    <a href="#" class="btn product-btn w-100">Add To Cart</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Product 8 -->
+                        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                            <div class="product-card">
+                                <a href="#" class="wishlist-btn" aria-label="Add to wishlist">
+                                    <i class="bi bi-heart"></i>
+                                </a>
+                                <div class="product-image">
+                                    <a href="product.html">
+                                        <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?q=80&w=800&auto=format&fit=crop"
+                                            loading="lazy" alt="Laptop Pro">
+                                    </a>
+                                </div>
+                                <div class="product-content">
+                                    <h5><a href="product.html" class="text-dark text-decoration-none">Laptop Pro</a></h5>
+                                    <div class="product-rating mb-2">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                    </div>
+                                    <div class="product-price mb-3">
+                                        <span class="new-price">$1,299</span>
+                                        <span class="old-price">$1,499</span>
+                                    </div>
+                                    <a href="#" class="btn product-btn w-100">Add To Cart</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Product 9 -->
+                        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                            <div class="product-card">
+                                <span class="product-badge">New</span>
+                                <a href="#" class="wishlist-btn" aria-label="Add to wishlist">
+                                    <i class="bi bi-heart"></i>
+                                </a>
+                                <div class="product-image">
+                                    <a href="product.html">
+                                        <img src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?q=80&w=800&auto=format&fit=crop"
+                                            loading="lazy" alt="Running Shoes">
+                                    </a>
+                                </div>
+                                <div class="product-content">
+                                    <h5><a href="product.html" class="text-dark text-decoration-none">Running Shoes</a></h5>
+                                    <div class="product-rating mb-2">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star"></i>
+                                    </div>
+                                    <div class="product-price mb-3">
+                                        <span class="new-price">$110</span>
+                                    </div>
+                                    <a href="#" class="btn product-btn w-100">Add To Cart</a>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
-                    
+                    <!-- Product Grid End -->
+
                     <!-- Pagination -->
                     <div class="pagination-box mt-5">
-                        <a href="#" class="active">
-                            1
-                        </a>
-                        
-                        <a href="#">
-                            2
-                        </a>
-                        
-                        <a href="#">
-                            3
-                        </a>
-                    
+                        <a href="#" class="active" aria-label="Page 1">1</a>
+                        <a href="#" aria-label="Page 2">2</a>
+                        <a href="#" aria-label="Page 3">3</a>
+                        <a href="#" aria-label="Next page"><i class="bi bi-chevron-right"></i></a>
                     </div>
-                
+
                 </div>
-            
+
             </div>
-        
+
         </div>
-    
+
     </section>
-    
     <!-- Shop Section End -->
-
-    <!-- Featured Products Start -->
-    <section class="products-section py-5">
-
-        <div class="container">
-
-            <!-- Section Title -->
-            <div class="text-center mb-5">
-
-                <h2 class="section-title">
-                    Featured Products
-                </h2>
-
-                <p class="section-text">
-                    Explore our handpicked selection of top-rated products for modern lifestyle.
-                </p>
-
-            </div>
-
-            <!-- Products Row -->
-            <div class="row g-4">
-                
-                <!-- Product Item -->
-                <div class="col-lg-3 col-md-6">
-                    
-                    <div class="product-card">
-                        
-                        <!-- Sale Badge -->
-                        <span class="product-badge">
-                            Sale
-                        </span>
-                        
-                        <!-- Wishlist -->
-                        <a href="#" class="wishlist-btn">
-                            <i class="bi bi-heart"></i>
-                        </a>
-                        
-                        <!-- Product Image -->
-                        <div class="product-image">
-                            <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?q=80&w=800&auto=format&fit=crop"
-                                alt="Product">
-                        </div>
-                            
-                        <!-- Product Info -->
-                        <div class="product-content">
-                            
-                            <h5>
-                                Premium T-Shirt
-                            </h5>
-                            
-                            <!-- Rating -->
-                            <div class="product-rating mb-2">
-                                
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-half"></i>
-                            
-                            </div>
-                            
-                            <!-- Price -->
-                            <div class="product-price mb-3">
-                                
-                                <span class="new-price">
-                                    $49
-                                </span>
-                                
-                                <span class="old-price">
-                                    $70
-                                </span>
-                            
-                            </div>
-                            
-                            <!-- Button -->
-                            <a href="#" class="btn product-btn w-100">
-                                Add To Cart
-                            </a>
-                        
-                        </div>
-                    
-                    </div>
-                
-                </div>
-                
-                <!-- Product Item -->
-                <div class="col-lg-3 col-md-6">
-                    
-                    <div class="product-card">
-                        
-                        <a href="#" class="wishlist-btn">
-                            <i class="bi bi-heart"></i>
-                        </a>
-                        
-                        <div class="product-image">
-                            
-                            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=800&auto=format&fit=crop"
-                                alt="Product">
-                            
-                        </div>
-                        
-                        <div class="product-content">
-                            
-                            <h5>Modern Sneakers</h5>
-                            
-                            <div class="product-rating mb-2">
-                                
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star"></i>
-                            
-                            </div>
-                            
-                            <div class="product-price mb-3">
-                                
-                                <span class="new-price">$89</span>
-                            
-                            </div>
-                            
-                            <a href="#" class="btn product-btn w-100">
-                                Add To Cart
-                            </a>
-                        
-                        </div>
-                    
-                    </div>
-                
-                </div>
-                
-                <!-- Product Item -->
-                <div class="col-lg-3 col-md-6">
-                    
-                    <div class="product-card">
-                        
-                        <span class="product-badge">
-                            New
-                        </span>
-                        
-                        <a href="#" class="wishlist-btn">
-                            <i class="bi bi-heart"></i>
-                        </a>
-                        
-                        <div class="product-image">
-                            
-                            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=800&auto=format&fit=crop"
-                                alt="Product">
-                            
-                        </div>
-                        
-                        <div class="product-content">
-                            
-                            <h5>Wireless Headphone</h5>
-                            
-                            <div class="product-rating mb-2">
-                                
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                            
-                            </div>
-                            
-                            <div class="product-price mb-3">
-                                
-                                <span class="new-price">$120</span>
-                            
-                            </div>
-                            
-                            <a href="#" class="btn product-btn w-100">
-                                Add To Cart
-                            </a>
-                        
-                        </div>
-                    
-                    </div>
-                
-                </div>
-                
-                <!-- Product Item -->
-                <div class="col-lg-3 col-md-6">
-                    
-                    <div class="product-card">
-                        
-                        <a href="#" class="wishlist-btn">
-                            <i class="bi bi-heart"></i>
-                        </a>
-                        
-                        <div class="product-image">
-                            
-                            <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?q=80&w=800&auto=format&fit=crop"
-                                alt="Product">
-                            
-                        </div>
-                            
-                        <div class="product-content">
-                                
-                            <h5>Smartphone Pro</h5>
-                                
-                            <div class="product-rating mb-2">
-                                    
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-half"></i>
-                                <i class="bi bi-star"></i>
-                                
-                            </div>
-                                
-                            <div class="product-price mb-3">
-                                    
-                                <span class="new-price">$799</span>
-                                
-                                <span class="old-price">$950</span>
-                                
-                            </div>
-                                
-                            <a href="#" class="btn product-btn w-100">
-                                Add To Cart
-                            </a>
-                            
-                        </div>
-                        
-                    </div>
-                    
-                </div>
-                
-            </div>
-
-        </div>
-        
-    </section>
-        
-    <!-- Featured Products End -->
 
     <!-- Footer Start -->
     <footer class="footer-section">
-        
+
         <div class="container">
-            
+
             <div class="row g-5">
-                
-                <!-- About -->
+
                 <div class="col-lg-4">
-                    
-                    <h3 class="footer-logo">
-                        ModernShop
-                    </h3>
-                    
+                    <h3 class="footer-logo">ModernShop</h3>
                     <p class="footer-text mt-4">
                         Premium ecommerce experience with modern fashion,
                         quality products, and trusted customer service.
                     </p>
-                    
-                    <!-- Social Icons -->
                     <div class="footer-social mt-4">
-                        
-                        <a href="#">
-                            <i class="bi bi-facebook"></i>
-                        </a>
-                        
-                        <a href="#">
-                            <i class="bi bi-twitter-x"></i>
-                        </a>
-                        
-                        <a href="#">
-                            <i class="bi bi-instagram"></i>
-                        </a>
-                        
-                        <a href="#">
-                            <i class="bi bi-linkedin"></i>
-                        </a>
-                    
+                        <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
                     </div>
-                
                 </div>
-                
-                <!-- Quick Links -->
-                <div class="col-lg-2 col-md-6">
-                    
-                    <h5 class="footer-title">
-                        Quick Links
-                    </h5>
-                    
-                    <ul class="footer-links">
-                        
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Shop</a></li>
-                        <li><a href="#">Categories</a></li>
-                        <li><a href="#">Contact</a></li>
-                    
-                    </ul>
-                
-                </div>
-                
-                <!-- Categories -->
-                <div class="col-lg-3 col-md-6">
-                    
-                    <h5 class="footer-title">
-                        Categories
-                    </h5>
-                    
-                    <ul class="footer-links">
 
-                        <li><a href="#">Fashion</a></li>
-                        <li><a href="#">Electronics</a></li>
-                        <li><a href="#">Accessories</a></li>
-                        <li><a href="#">Shoes</a></li>
-                    
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="footer-title">Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="#">Categories</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                     </ul>
-                
                 </div>
-                
-                <!-- Contact -->
+
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-title">Categories</h5>
+                    <ul class="footer-links">
+                        <li><a href="shop.html">Fashion</a></li>
+                        <li><a href="shop.html">Electronics</a></li>
+                        <li><a href="shop.html">Accessories</a></li>
+                        <li><a href="shop.html">Shoes</a></li>
+                    </ul>
+                </div>
+
                 <div class="col-lg-3">
-                    
-                    <h5 class="footer-title">
-                        Contact
-                    </h5>
-                    
+                    <h5 class="footer-title">Contact</h5>
                     <ul class="footer-contact">
-                        
-                        <li>
-                            <i class="bi bi-geo-alt"></i>
-                            Dhaka, Bangladesh
-                        </li>
-                        
-                        <li>
-                            <i class="bi bi-envelope"></i>
-                            meritpaul12@gmail.com
-                        </li>
-                        
-                        <li>
-                            <i class="bi bi-telephone"></i>
-                            +880 1812109812
-                        </li>
-                    
+                        <li><i class="bi bi-geo-alt"></i> Dhaka, Bangladesh</li>
+                        <li><i class="bi bi-envelope"></i> meritpaul12@gmail.com</li>
+                        <li><i class="bi bi-telephone"></i> +880 1812109812</li>
                     </ul>
-                
                 </div>
-            
+
             </div>
-            
-            <!-- Copyright -->
+
             <div class="footer-bottom text-center mt-5">
-                
-                <p>
-                    © 2026 ModernShop. All Rights Reserved.
-                </p>
-            
+                <p>© 2026 ModernShop. All Rights Reserved.</p>
             </div>
-        
+
         </div>
-    
+
     </footer>
-    
     <!-- Footer End -->
 
     <!-- Mobile Bottom Navigation Start -->
-
     <div class="mobile-nav">
 
-        <!-- Home -->
-        <a href="index.html"
-            class="mobile-nav-item active">
-
+        <a href="index.html" class="mobile-nav-item">
             <i class="bi bi-house-door"></i>
-
-            <span>
-                Home
-            </span>
-
+            <span>Home</span>
         </a>
 
-        <!-- Shop -->
-        <a href="shop.html"
-            class="mobile-nav-item">
-
+        <a href="shop.html" class="mobile-nav-item active">
             <i class="bi bi-grid"></i>
-
-            <span>
-                Shop
-            </span>
-
+            <span>Shop</span>
         </a>
 
-        <!-- Cart -->
-        <a href="cart.html"
-            class="mobile-nav-item">
-
+        <a href="cart.html" class="mobile-nav-item">
             <i class="bi bi-cart3"></i>
-
-            <span>
-                Cart
-            </span>
-
+            <span>Cart</span>
         </a>
 
-        <!-- Wishlist -->
-        <a href="#"
-            class="mobile-nav-item">
-
+        <a href="#" class="mobile-nav-item">
             <i class="bi bi-heart"></i>
-
-            <span>
-                Wishlist
-            </span>
-
+            <span>Wishlist</span>
         </a>
 
-        <!-- Profile -->
-        <a href="#"
-            class="mobile-nav-item">
-
+        <a href="#" class="mobile-nav-item">
             <i class="bi bi-person"></i>
-
-            <span>
-                Profile
-            </span>
-
+            <span>Profile</span>
         </a>
 
     </div>
-
     <!-- Mobile Bottom Navigation End -->
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
     <!-- Custom JS -->
     <script src="assets/js/main.js"></script>
+
+    <!-- Price Range Script -->
+    <script>
+        const priceRange = document.getElementById('priceRange');
+        const priceValue = document.getElementById('priceValue');
+        if (priceRange && priceValue) {
+            priceRange.addEventListener('input', () => {
+                priceValue.textContent = '$' + priceRange.value;
+            });
+        }
+    </script>
 
 </body>
 
