@@ -5,18 +5,24 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon"
-        type="image/png"
-        href="assets/images/favicon.png">
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
 
-    <title>404 Page Not Found - ModernShop</title>
+    <title>404 - Page Not Found | ModernShop</title>
 
-    <link rel="preconnect"
-        href="https://fonts.googleapis.com">
-        
-    <link rel="preconnect"
-        href="https://fonts.gstatic.com"
-        crossorigin>
+    <meta name="description" content="The page you're looking for doesn't exist. Return to ModernShop homepage.">
+    <meta name="robots" content="noindex, nofollow">
+
+    <!-- Anti-FOUC: apply saved dark theme before paint -->
+    <script>
+        if (localStorage.getItem("theme") === "dark") {
+            document.documentElement.classList.add("dark-mode");
+        }
+    </script>
+
+    <!-- Google Font: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -24,260 +30,122 @@
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-    <!-- AOS Animation -->
-    <link rel="stylesheet"
-        href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
-
     <link rel="stylesheet" href="assets/css/responsive.css">
+
 </head>
 
 <body>
 
     <!-- Preloader Start -->
-
     <div id="preloader">
-
         <div class="loader">
-
             <span></span>
             <span></span>
             <span></span>
-
         </div>
-
     </div>
-
-    <!-- Preloader End -->    
+    <!-- Preloader End -->
 
     <!-- Navbar Start -->
-
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top custom-navbar">
+    <nav class="navbar navbar-expand-lg fixed-top custom-navbar">
 
         <div class="container">
 
-            <!-- Logo -->
+            <a class="navbar-brand fw-bold fs-3" href="index.html">ModernShop</a>
 
-            <a class="navbar-brand fw-bold fs-3"
-                href="index.html">
-
-                ModernShop
-
-            </a>
-
-            <!-- Mobile Toggle -->
-
-            <button class="navbar-toggler"
-                type="button"
+            <button class="navbar-toggler border-0" type="button"
                 data-bs-toggle="collapse"
-                data-bs-target="#mainMenu">
-
+                data-bs-target="#mainMenu"
+                aria-controls="mainMenu"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-
             </button>
 
-            <!-- Menu -->
-
-            <div class="collapse navbar-collapse"
-                id="mainMenu">
-
-                <!-- Main Menu -->
+            <div class="collapse navbar-collapse" id="mainMenu">
 
                 <ul class="navbar-nav mx-auto">
 
-                    <li class="nav-item">
-                        <a class="nav-link"
-                            href="index.html">
-
-                            Home
-
-                        </a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link"
-                            href="shop.html">
-
-                            Shop
-
-                        </a>
-                    </li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
 
                     <!-- Mega Menu -->
-
-                    <li class="nav-item dropdown mega-menu-item">
-
-                        <a class="nav-link dropdown-toggle"
-                            href="#">
-
-                            Categories
-
+                    <li class="nav-item mega-menu-item">
+                        <a class="nav-link" href="#">
+                            Categories <i class="bi bi-chevron-down ms-1" style="font-size:12px;"></i>
                         </a>
-
                         <div class="mega-menu">
-
                             <div class="row">
-
                                 <div class="col-lg-3">
-
-                                    <h5 class="mega-title">
-                                        Fashion
-                                    </h5>
-
+                                    <h5 class="mega-title">Fashion</h5>
                                     <ul class="mega-links">
-
                                         <li><a href="shop.html">Men Fashion</a></li>
                                         <li><a href="shop.html">Women Fashion</a></li>
                                         <li><a href="shop.html">Shoes</a></li>
                                         <li><a href="shop.html">Bags</a></li>
                                         <li><a href="shop.html">Accessories</a></li>
-
                                     </ul>
-
                                 </div>
-
                                 <div class="col-lg-3">
-
-                                    <h5 class="mega-title">
-                                        Electronics
-                                    </h5>
-
+                                    <h5 class="mega-title">Electronics</h5>
                                     <ul class="mega-links">
-
                                         <li><a href="shop.html">Smartphones</a></li>
                                         <li><a href="shop.html">Laptop</a></li>
                                         <li><a href="shop.html">Gaming</a></li>
                                         <li><a href="shop.html">Headphones</a></li>
                                         <li><a href="shop.html">Smart Watch</a></li>
-
                                     </ul>
-
                                 </div>
-
                                 <div class="col-lg-3">
-
-                                    <h5 class="mega-title">
-                                        Home & Living
-                                    </h5>
-
+                                    <h5 class="mega-title">Home & Living</h5>
                                     <ul class="mega-links">
-
                                         <li><a href="shop.html">Furniture</a></li>
                                         <li><a href="shop.html">Lighting</a></li>
                                         <li><a href="shop.html">Kitchen</a></li>
                                         <li><a href="shop.html">Decor</a></li>
                                         <li><a href="shop.html">Office Setup</a></li>
-
                                     </ul>
-
                                 </div>
-
                                 <div class="col-lg-3">
-
                                     <div class="mega-promo">
-
-                                        <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?q=80&w=1200&auto=format&fit=crop"
-                                            class="img-fluid"
-                                            alt="Sale">
-
+                                        <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?q=80&w=800&auto=format&fit=crop"
+                                            class="img-fluid" alt="Sale">
                                         <div class="mega-promo-content">
-
-                                            <h4>
-                                                Summer Sale
-                                            </h4>
-
-                                            <p>
-                                                Up To 50% Off
-                                            </p>
-
-                                            <a href="shop.html"
-                                                class="btn btn-light btn-sm">
-
-                                                Shop Now
-
-                                            </a>
-
+                                            <h4>Summer Sale</h4>
+                                            <p>Up To 50% Off</p>
+                                            <a href="shop.html" class="btn btn-light btn-sm mt-2">Shop Now</a>
                                         </div>
-
                                     </div>
-
                                 </div>
-
                             </div>
-
                         </div>
-
                     </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link"
-                            href="about.html">
-
-                            About
-
-                        </a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link"
-                            href="blog.html">
-
-                            Blog
-
-                        </a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link"
-                            href="faq.html">
-
-                            FAQ
-
-                        </a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link"
-                            href="contact.html">
-
-                            Contact
-
-                        </a>
-                    </li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
 
                 </ul>
 
-                <!-- Right Icons -->
-
                 <div class="d-flex align-items-center gap-3">
 
-                    <button class="theme-toggle-btn"
-                        id="themeToggle">
-
+                    <button class="theme-toggle-btn" id="themeToggle" aria-label="Toggle dark mode">
                         <i class="bi bi-moon-fill"></i>
-
                     </button>
 
-                    <a href="#"
-                        class="text-dark fs-5">
-
+                    <a href="#" class="text-dark fs-5" aria-label="Search">
                         <i class="bi bi-search"></i>
-
                     </a>
 
-                    <a href="cart.html"
-                        class="text-dark fs-5 position-relative">
-
+                    <a href="cart.html" class="text-dark fs-5 position-relative" aria-label="Cart">
                         <i class="bi bi-cart3"></i>
-
-                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-
-                            2
-
-                        </span>
-
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">2</span>
                     </a>
 
                 </div>
@@ -287,27 +155,9 @@
         </div>
 
     </nav>
-
     <!-- Navbar End -->
 
-    <!-- Page Banner Start -->
-
-    <section class="page-banner">
-
-        <div class="container text-center">
-
-            <h1>404 Error</h1>
-
-            <p>Home / Page Not Found</p>
-
-        </div>
-
-    </section>
-
-    <!-- Page Banner End -->
-
     <!-- 404 Section Start -->
-
     <section class="error-section">
 
         <div class="container">
@@ -316,58 +166,68 @@
 
                 <div class="col-lg-8 text-center">
 
-                    <div class="error-box"
-                        data-aos="zoom-in">
+                    <div class="error-box" data-aos="zoom-in">
 
-                        <!-- Error Number -->
-                        <h1 class="error-code">
+                        <!-- Animated 404 -->
+                        <div class="error-code">404</div>
 
-                            404
+                        <!-- Illustration -->
+                        <div class="mt-4 mb-4">
+                            <svg viewBox="0 0 200 120" xmlns="http://www.w3.org/2000/svg"
+                                style="max-width:220px; margin:auto; display:block;">
+                                <!-- Ground -->
+                                <ellipse cx="100" cy="110" rx="80" ry="8" fill="#f0f0f0"/>
+                                <!-- Box body -->
+                                <rect x="60" y="55" width="80" height="55" rx="6" fill="#e8e8e8" stroke="#ccc" stroke-width="1.5"/>
+                                <!-- Box lid -->
+                                <path d="M58 55 Q100 38 142 55" fill="#d4d4d4" stroke="#bbb" stroke-width="1.5"/>
+                                <!-- Question mark -->
+                                <text x="100" y="90" text-anchor="middle" font-size="32" font-weight="800"
+                                    font-family="Arial" fill="#888">?</text>
+                                <!-- Stars -->
+                                <text x="30" y="35" font-size="14" fill="#ccc">✦</text>
+                                <text x="160" y="25" font-size="10" fill="#ddd">✦</text>
+                                <text x="148" y="50" font-size="8" fill="#ddd">✦</text>
+                            </svg>
+                        </div>
 
-                        </h1>
+                        <h1 class="error-title">Oops! Page Not Found</h1>
 
-                        <!-- Title -->
-                        <h2 class="error-title mt-4">
-
-                            Oops! Page Not Found
-
-                        </h2>
-
-                        <!-- Text -->
-                        <p class="error-text mt-4">
-
-                            The page you are looking for does not exist
-                            or has been moved to another location.
-
+                        <p class="error-text mt-3">
+                            The page you're looking for doesn't exist or has been moved.
+                            Let's get you back on track.
                         </p>
 
-                        <!-- Buttons -->
-                        <div class="d-flex justify-content-center gap-3 mt-5 flex-wrap">
-
-                            <a href="index.html"
-                                class="btn hero-btn">
-
-                                Back To Home
-
+                        <!-- Quick Links -->
+                        <div class="d-flex justify-content-center gap-2 flex-wrap mt-4 mb-5">
+                            <a href="index.html" class="btn btn-outline-secondary btn-sm px-3" style="border-radius:20px;">
+                                <i class="bi bi-house me-1"></i>Home
                             </a>
-
-                            <a href="shop.html"
-                                class="btn btn-outline-dark px-4 py-3">
-
-                                Continue Shopping
-
+                            <a href="shop.html" class="btn btn-outline-secondary btn-sm px-3" style="border-radius:20px;">
+                                <i class="bi bi-grid me-1"></i>Shop
                             </a>
-
+                            <a href="blog.html" class="btn btn-outline-secondary btn-sm px-3" style="border-radius:20px;">
+                                <i class="bi bi-journal me-1"></i>Blog
+                            </a>
+                            <a href="contact.html" class="btn btn-outline-secondary btn-sm px-3" style="border-radius:20px;">
+                                <i class="bi bi-envelope me-1"></i>Contact
+                            </a>
                         </div>
 
-                        <!-- Image -->
-                        <div class="mt-5">
-
-                            <img src="https://cdn-icons-png.flaticon.com/512/2748/2748558.png"
-                                class="img-fluid error-image"
-                                alt="404">
-
+                        <!-- Primary CTAs -->
+                        <div class="d-flex justify-content-center gap-3 flex-wrap">
+                            <a href="index.html" class="btn hero-btn">
+                                <i class="bi bi-house me-2"></i>Back To Home
+                            </a>
+                            <a href="shop.html" class="btn btn-outline-dark px-4 py-3">
+                                <i class="bi bi-bag me-2"></i>Continue Shopping
+                            </a>
                         </div>
+
+                        <!-- Countdown redirect -->
+                        <p class="text-muted mt-4" style="font-size:14px;">
+                            Redirecting to home in <span id="countdown" style="font-weight:700;">10</span> seconds...
+                        </p>
 
                     </div>
 
@@ -378,208 +238,123 @@
         </div>
 
     </section>
-
     <!-- 404 Section End -->
 
     <!-- Footer Start -->
     <footer class="footer-section">
-        
+
         <div class="container">
-            
+
             <div class="row g-5">
-                
-                <!-- About -->
+
                 <div class="col-lg-4">
-                    
-                    <h3 class="footer-logo">
-                        ModernShop
-                    </h3>
-                    
+                    <h3 class="footer-logo">ModernShop</h3>
                     <p class="footer-text mt-4">
                         Premium ecommerce experience with modern fashion,
                         quality products, and trusted customer service.
                     </p>
-                    
-                    <!-- Social Icons -->
                     <div class="footer-social mt-4">
-                        
-                        <a href="#">
-                            <i class="bi bi-facebook"></i>
-                        </a>
-                        
-                        <a href="#">
-                            <i class="bi bi-twitter-x"></i>
-                        </a>
-                        
-                        <a href="#">
-                            <i class="bi bi-instagram"></i>
-                        </a>
-                        
-                        <a href="#">
-                            <i class="bi bi-linkedin"></i>
-                        </a>
-                    
+                        <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
                     </div>
-                
                 </div>
-                
-                <!-- Quick Links -->
+
                 <div class="col-lg-2 col-md-6">
-                    
-                    <h5 class="footer-title">
-                        Quick Links
-                    </h5>
-                    
+                    <h5 class="footer-title">Quick Links</h5>
                     <ul class="footer-links">
-                        
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Shop</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html">Shop</a></li>
                         <li><a href="#">Categories</a></li>
-                        <li><a href="#">Contact</a></li>
-                    
+                        <li><a href="contact.html">Contact</a></li>
                     </ul>
-                
                 </div>
-                
-                <!-- Categories -->
+
                 <div class="col-lg-3 col-md-6">
-                    
-                    <h5 class="footer-title">
-                        Categories
-                    </h5>
-                    
+                    <h5 class="footer-title">Categories</h5>
                     <ul class="footer-links">
-
-                        <li><a href="#">Fashion</a></li>
-                        <li><a href="#">Electronics</a></li>
-                        <li><a href="#">Accessories</a></li>
-                        <li><a href="#">Shoes</a></li>
-                    
+                        <li><a href="shop.html">Fashion</a></li>
+                        <li><a href="shop.html">Electronics</a></li>
+                        <li><a href="shop.html">Accessories</a></li>
+                        <li><a href="shop.html">Shoes</a></li>
                     </ul>
-                
                 </div>
-                
-                <!-- Contact -->
+
                 <div class="col-lg-3">
-                    
-                    <h5 class="footer-title">
-                        Contact
-                    </h5>
-                    
+                    <h5 class="footer-title">Contact</h5>
                     <ul class="footer-contact">
-                        
-                        <li>
-                            <i class="bi bi-geo-alt"></i>
-                            Dhaka, Bangladesh
-                        </li>
-                        
-                        <li>
-                            <i class="bi bi-envelope"></i>
-                            meritpaul12@gmail.com
-                        </li>
-                        
-                        <li>
-                            <i class="bi bi-telephone"></i>
-                            +880 1812109812
-                        </li>
-                    
+                        <li><i class="bi bi-geo-alt"></i> Dhaka, Bangladesh</li>
+                        <li><i class="bi bi-envelope"></i> meritpaul12@gmail.com</li>
+                        <li><i class="bi bi-telephone"></i> +880 1812109812</li>
                     </ul>
-                
                 </div>
-            
-            </div>
-            
-            <!-- Copyright -->
-            <div class="footer-bottom text-center mt-5">
-                
-                <p>
-                    © 2026 ModernShop. All Rights Reserved.
-                </p>
-            
-            </div>
-        
-        </div>
-    
-    </footer>
-    
-    <!-- Footer End -->
-    
-    <!-- Mobile Bottom Navigation Start -->
 
+            </div>
+
+            <div class="footer-bottom text-center mt-5">
+                <p>© 2026 ModernShop. All Rights Reserved.</p>
+            </div>
+
+        </div>
+
+    </footer>
+    <!-- Footer End -->
+
+    <!-- Mobile Bottom Navigation Start -->
     <div class="mobile-nav">
 
-        <!-- Home -->
-        <a href="index.html"
-            class="mobile-nav-item active">
-
+        <a href="index.html" class="mobile-nav-item">
             <i class="bi bi-house-door"></i>
-
-            <span>
-                Home
-            </span>
-
+            <span>Home</span>
         </a>
 
-        <!-- Shop -->
-        <a href="shop.html"
-            class="mobile-nav-item">
-
+        <a href="shop.html" class="mobile-nav-item">
             <i class="bi bi-grid"></i>
-
-            <span>
-                Shop
-            </span>
-
+            <span>Shop</span>
         </a>
 
-        <!-- Cart -->
-        <a href="cart.html"
-            class="mobile-nav-item">
-
+        <a href="cart.html" class="mobile-nav-item">
             <i class="bi bi-cart3"></i>
-
-            <span>
-                Cart
-            </span>
-
+            <span>Cart</span>
         </a>
 
-        <!-- Wishlist -->
-        <a href="#"
-            class="mobile-nav-item">
-
+        <a href="#" class="mobile-nav-item">
             <i class="bi bi-heart"></i>
-
-            <span>
-                Wishlist
-            </span>
-
+            <span>Wishlist</span>
         </a>
 
-        <!-- Profile -->
-        <a href="#"
-            class="mobile-nav-item">
-
+        <a href="#" class="mobile-nav-item">
             <i class="bi bi-person"></i>
-
-            <span>
-                Profile
-            </span>
-
+            <span>Profile</span>
         </a>
 
     </div>
-
     <!-- Mobile Bottom Navigation End -->
-    
+
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    
+
     <!-- AOS JS -->
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 
     <!-- Custom JS -->
     <script src="assets/js/main.js"></script>
+
+    <!-- Countdown Redirect Script -->
+    <script>
+        let seconds = 10;
+        const countEl = document.getElementById('countdown');
+
+        const timer = setInterval(() => {
+            seconds--;
+            if (countEl) countEl.textContent = seconds;
+            if (seconds <= 0) {
+                clearInterval(timer);
+                window.location.href = 'index.html';
+            }
+        }, 1000);
+    </script>
 
 </body>
 
