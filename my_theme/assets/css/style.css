@@ -1,5 +1,5 @@
 /* ===========================
-   RESET & BASE
+    RESET & BASE
    =========================== */
 
 *,
@@ -33,7 +33,7 @@ img {
 }
 
 /* ===========================
-   TRANSITIONS (GLOBAL)
+    TRANSITIONS (GLOBAL)
    =========================== */
 
 a,
@@ -47,7 +47,7 @@ button,
 }
 
 /* ===========================
-   CONTAINER
+    CONTAINER
    =========================== */
 
 .container {
@@ -55,7 +55,7 @@ button,
 }
 
 /* ===========================
-   PRELOADER
+    PRELOADER
    =========================== */
 
 #preloader {
@@ -98,7 +98,7 @@ button,
 }
 
 /* ===========================
-   MOBILE NAVIGATION
+    MOBILE NAVIGATION
    =========================== */
 
 .mobile-nav {
@@ -144,7 +144,7 @@ button,
 }
 
 /* ===========================
-   NAVBAR
+    NAVBAR
    =========================== */
 
 .custom-navbar {
@@ -184,7 +184,7 @@ button,
 .navbar .nav-link.active { font-weight: 700; }
 
 /* ===========================
-   MEGA MENU
+    MEGA MENU
    =========================== */
 
 .mega-menu-item { position: relative; }
@@ -262,7 +262,7 @@ button,
 }
 
 /* ===========================
-   THEME TOGGLE
+    THEME TOGGLE
    =========================== */
 
 .theme-toggle-btn {
@@ -279,7 +279,7 @@ button,
 .theme-toggle-btn:hover { background: #333; }
 
 /* ===========================
-   HERO SECTION (Static)
+    HERO SECTION (Static)
    =========================== */
 
 .hero-section {
@@ -336,7 +336,7 @@ button,
 }
 
 /* ===========================
-   HERO SLIDER
+    HERO SLIDER
    =========================== */
 
 .hero-slider {
@@ -420,7 +420,7 @@ button,
 }
 
 /* ===========================
-   SECTION TITLES
+    SECTION TITLES
    =========================== */
 
 .section-title {
@@ -435,7 +435,7 @@ button,
 }
 
 /* ===========================
-   CATEGORY CARDS
+    CATEGORY CARDS
    =========================== */
 
 .category-card {
@@ -489,7 +489,7 @@ button,
 }
 
 /* ===========================
-   PRODUCT CARDS
+    PRODUCT CARDS
    =========================== */
 
 .product-card {
@@ -621,7 +621,7 @@ button,
 .quick-view-content { padding: 40px; }
 
 /* ===========================
-   PROMO BANNER
+    PROMO BANNER
    =========================== */
 
 .promo-banner {
@@ -681,7 +681,7 @@ button,
 }
 
 /* ===========================
-   TESTIMONIALS
+    TESTIMONIALS
    =========================== */
 
 .testimonial-section { background: #f8f9fa; }
@@ -719,7 +719,7 @@ button,
 .testimonial-user small { color: #888; }
 
 /* ===========================
-   NEWSLETTER
+    NEWSLETTER
    =========================== */
 
 .newsletter-box {
@@ -772,7 +772,7 @@ button,
 }
 
 /* ===========================
-   FOOTER
+    FOOTER
    =========================== */
 
 .footer-section {
@@ -854,7 +854,7 @@ button,
 .footer-bottom p { color: #888; }
 
 /* ===========================
-   PAGE BANNERS & HEADERS
+    PAGE BANNERS & HEADERS
    =========================== */
 
 .shop-banner {
@@ -906,7 +906,7 @@ button,
 .page-header p { margin-top: 15px; }
 
 /* ===========================
-   SHOP SIDEBAR & TOPBAR
+    SHOP SIDEBAR & TOPBAR
    =========================== */
 
 .shop-sidebar {
@@ -982,7 +982,7 @@ button,
 }
 
 /* ===========================
-   PRODUCT DETAILS PAGE
+    PRODUCT DETAILS PAGE
    =========================== */
 
 .product-details { background: #f8f9fa; }
@@ -1073,7 +1073,7 @@ button,
 }
 
 /* ===========================
-   CART PAGE
+    CART PAGE
    =========================== */
 
 .cart-table {
@@ -1170,7 +1170,7 @@ button,
 }
 
 /* ===========================
-   CHECKOUT PAGE
+    CHECKOUT PAGE
    =========================== */
 
 .checkout-form-box,
@@ -1229,7 +1229,7 @@ button,
 }
 
 /* ===========================
-   ABOUT PAGE
+    ABOUT PAGE
    =========================== */
 
 .about-subtitle {
@@ -1254,7 +1254,7 @@ button,
 }
 
 /* ===========================
-   FEATURES
+    FEATURES
    =========================== */
 
 .feature-box {
@@ -1281,7 +1281,7 @@ button,
 }
 
 /* ===========================
-   TEAM
+    TEAM
    =========================== */
 
 .team-card {
@@ -1306,7 +1306,7 @@ button,
 }
 
 /* ===========================
-   CONTACT PAGE
+    CONTACT PAGE
    =========================== */
 
 .contact-form-box,
@@ -1359,7 +1359,7 @@ textarea.contact-input { height: auto; }
 }
 
 /* ===========================
-   BLOG PAGE
+    BLOG PAGE
    =========================== */
 
 .blog-card {
@@ -1459,7 +1459,7 @@ textarea.contact-input { height: auto; }
 .recent-post img:hover { transform: scale(1.05); }
 
 /* ===========================
-   BLOG DETAILS
+    BLOG DETAILS
    =========================== */
 
 .blog-details-image img {
@@ -1544,7 +1544,7 @@ textarea.contact-input { height: auto; }
 textarea.comment-input { height: auto; }
 
 /* ===========================
-   FAQ PAGE
+    FAQ PAGE
    =========================== */
 
 .faq-accordion .accordion-item {
@@ -1601,7 +1601,7 @@ textarea.comment-input { height: auto; }
 }
 
 /* ===========================
-   404 ERROR PAGE
+    404 ERROR PAGE
    =========================== */
 
 .error-section { padding: 80px 0 100px; }
@@ -1640,7 +1640,7 @@ textarea.comment-input { height: auto; }
 }
 
 /* ===========================
-   DARK MODE — BASE
+    DARK MODE — BASE
    =========================== */
 
 body.dark-mode,
@@ -1684,7 +1684,7 @@ body.dark-mode .mobile-nav-item.active,
 body.dark-mode .mobile-nav-item:hover { color: #fff; }
 
 /* ===========================
-   DARK MODE — CARDS & BOXES
+    DARK MODE — CARDS & BOXES
    =========================== */
 
 body.dark-mode .product-card,
@@ -1711,7 +1711,7 @@ body.dark-mode .faq-card {
 }
 
 /* ===========================
-   DARK MODE — TEXT
+    DARK MODE — TEXT
    =========================== */
 
 body.dark-mode .section-text,
@@ -1754,7 +1754,7 @@ body.dark-mode .old-price,
 body.dark-mode .details-old-price { color: #777; }
 
 /* ===========================
-   DARK MODE — INPUTS
+    DARK MODE — INPUTS
    =========================== */
 
 body.dark-mode .form-control,
@@ -1780,7 +1780,7 @@ body.dark-mode .contact-input:focus {
 }
 
 /* ===========================
-   DARK MODE — PAGE BANNERS
+    DARK MODE — PAGE BANNERS
    =========================== */
 
 body.dark-mode .page-header,
@@ -1800,7 +1800,7 @@ body.dark-mode .hero-title { color: #fff; }
 body.dark-mode .hero-text  { color: #bbb; }
 
 /* ===========================
-   DARK MODE — FOOTER
+    DARK MODE — FOOTER
    =========================== */
 
 body.dark-mode .footer-section {
@@ -1828,7 +1828,7 @@ body.dark-mode .footer-social a:hover {
 }
 
 /* ===========================
-   DARK MODE — ICONS
+    DARK MODE — ICONS
    =========================== */
 
 body.dark-mode i { color: #ccc; }
@@ -1878,7 +1878,7 @@ body.dark-mode .modal-content { background: #1a1a1a; color: #fff; }
 body.dark-mode .quick-view-btn { background: #222; border-color: #333; color: #fff; }
 
 /* ===========================
-   DARK MODE — MEGA MENU
+    DARK MODE — MEGA MENU
    =========================== */
 
 body.dark-mode .mega-menu {
@@ -1891,7 +1891,7 @@ body.dark-mode .mega-links a { color: #bbb; }
 body.dark-mode .mega-links a:hover { color: #fff; }
 
 /* ===========================
-   DARK MODE — TABLES
+    DARK MODE — TABLES
    =========================== */
 
 body.dark-mode table,
@@ -1910,7 +1910,7 @@ body.dark-mode thead th {
 }
 
 /* ===========================
-   DARK MODE — MISC
+    DARK MODE — MISC
    =========================== */
 
 /* Pagination */
@@ -2027,4 +2027,334 @@ body.dark-mode .btn-close { filter: invert(1); }
 body.dark-mode .size-btn.btn-outline-dark {
     color: #ccc;
     border-color: #444;
+}
+
+/* ===================================================
+    DARK MODE — COMPREHENSIVE SECTION & BACKGROUND FIX
+    Fixes white/light sections, inline styles, Bootstrap
+    utility classes, and text visibility issues.
+   =================================================== */
+
+/* ===========================
+    Page-level background
+   =========================== */
+
+body.dark-mode,
+html.dark-mode body {
+    background: #0f0f0f !important;
+}
+
+/* ===========================
+    ALL sections default dark
+   =========================== */
+
+body.dark-mode section,
+html.dark-mode section {
+    background: #0f0f0f;
+    color: #ddd;
+}
+
+/* Sections that should be slightly elevated */
+body.dark-mode .testimonial-section,
+body.dark-mode .features-section,
+body.dark-mode .team-section,
+body.dark-mode .faq-section,
+body.dark-mode .blog-page,
+body.dark-mode .error-section,
+body.dark-mode .contact-section,
+body.dark-mode .checkout-section,
+body.dark-mode .cart-section,
+body.dark-mode .shop-section,
+body.dark-mode .categories-section,
+body.dark-mode .products-section,
+body.dark-mode .newsletter-section,
+body.dark-mode .promo-section,
+body.dark-mode .about-section,
+body.dark-mode .product-details {
+    background: #0f0f0f;
+}
+
+/* ===========================
+    Inline style overrides
+    (stats section, team section
+    with style="background:#f8f9fa")
+   =========================== */
+
+body.dark-mode section[style*="background"] {
+    background: #0f0f0f !important;
+}
+
+/* ===========================
+    Bootstrap background utilities
+   =========================== */
+
+body.dark-mode .bg-white,
+body.dark-mode .bg-light {
+    background: #1a1a1a !important;
+    color: #fff;
+}
+
+/* f8f9fa / f5f5f5 light backgrounds used everywhere */
+body.dark-mode [style*="background:#f8f9fa"],
+body.dark-mode [style*="background: #f8f9fa"],
+body.dark-mode [style*="background:#f5f5f5"],
+body.dark-mode [style*="background: #f5f5f5"] {
+    background: #1a1a1a !important;
+}
+
+/* ===========================
+    Team card content area
+   =========================== */
+
+body.dark-mode .team-card,
+body.dark-mode .team-content {
+    background: #1a1a1a;
+    color: #fff;
+}
+
+body.dark-mode .team-content h5 { color: #fff; }
+body.dark-mode .team-content span { color: #bbb; }
+
+/* ===========================
+    Feature icon circle
+   =========================== */
+
+body.dark-mode .feature-icon {
+    background: #2a2a2a;
+    color: #ccc;
+}
+
+body.dark-mode .feature-box h4 { color: #fff; }
+body.dark-mode .feature-box p  { color: #bbb; }
+
+/* ===========================
+    Stats section (about page)
+   =========================== */
+
+body.dark-mode .col-lg-3 h2,
+body.dark-mode .col-6 h2 { color: #fff; }
+
+/* ===========================
+    About section
+   =========================== */
+
+body.dark-mode .about-section { background: #0f0f0f; }
+body.dark-mode .about-title   { color: #fff; }
+body.dark-mode .about-subtitle { color: #888; }
+body.dark-mode .about-text    { color: #bbb; }
+body.dark-mode .about-features i   { color: #ccc; }
+body.dark-mode .about-features span { color: #bbb; }
+
+/* ===========================
+    Product details section
+   =========================== */
+
+body.dark-mode .product-details { background: #0f0f0f; }
+body.dark-mode .product-description { color: #bbb; }
+body.dark-mode .product-extra-info p { color: #999; }
+body.dark-mode .product-extra-info strong { color: #ddd; }
+
+/* Nav tabs (product page) */
+body.dark-mode .tab-pane { background: transparent; color: #bbb; }
+body.dark-mode .tab-pane ul li { color: #bbb; }
+body.dark-mode .tab-pane p { color: #bbb; }
+
+/* ===========================
+    Blog details quote
+   =========================== */
+
+body.dark-mode .blog-quote {
+    background: #1a1a1a;
+    border-left-color: #555;
+}
+
+body.dark-mode .blog-quote h4 { color: #ddd; }
+body.dark-mode .blog-quote p  { color: #888; }
+
+/* Blog article list items */
+body.dark-mode article ul li,
+body.dark-mode article ol li { color: #bbb; }
+
+body.dark-mode article h3 { color: #fff; }
+
+/* ===========================
+    Contact info box
+   =========================== */
+
+body.dark-mode .contact-info-box { background: #1a1a1a; }
+body.dark-mode .contact-info-item h5  { color: #fff; }
+body.dark-mode .contact-info-item p,
+body.dark-mode .contact-info-item a   { color: #bbb; }
+body.dark-mode .contact-info-item .border-top { border-color: #333 !important; }
+
+/* ===========================
+    Contact form box
+   =========================== */
+
+body.dark-mode .contact-form-box { background: #1a1a1a; }
+body.dark-mode .contact-form-box h2 { color: #fff; }
+body.dark-mode .contact-form-box p  { color: #bbb; }
+body.dark-mode .form-label { color: #ccc; }
+
+/* ===========================
+    Cart & Checkout
+   =========================== */
+
+body.dark-mode .cart-table { background: #1a1a1a; }
+body.dark-mode .cart-total-box { background: #1a1a1a; }
+body.dark-mode .cart-total-box h4 { color: #fff; }
+
+body.dark-mode .checkout-form-box h4,
+body.dark-mode .order-summary-box h4 { color: #fff; }
+body.dark-mode .order-summary-box  { background: #1a1a1a; }
+
+/* ===========================
+    FAQ support box text
+   =========================== */
+
+body.dark-mode .faq-support-box h3 { color: #fff; }
+body.dark-mode .faq-support-box p  { color: #bbb; }
+
+/* ===========================
+    Error box (404)
+   =========================== */
+
+body.dark-mode .error-box  { background: #1a1a1a; }
+body.dark-mode .error-code { color: #fff; }
+body.dark-mode .error-title { color: #fff; }
+body.dark-mode .error-text  { color: #bbb; }
+
+/* ===========================
+    Blog sidebar
+   =========================== */
+
+body.dark-mode .blog-sidebar { background: #1a1a1a; }
+body.dark-mode .blog-sidebar h4 { color: #fff; }
+body.dark-mode .recent-post h6 a { color: #ddd; }
+body.dark-mode .recent-post small { color: #888; }
+
+/* ===========================
+    Comment boxes
+   =========================== */
+
+body.dark-mode .comment-box { background: #1a1a1a; }
+body.dark-mode .comment-box h5 { color: #fff; }
+body.dark-mode .comment-box p  { color: #bbb; }
+body.dark-mode .comment-box small { color: #888; }
+
+/* ===========================
+    Shop sidebar & topbar
+   =========================== */
+
+body.dark-mode .shop-sidebar { background: #1a1a1a; }
+body.dark-mode .shop-sidebar h5 { color: #fff; }
+body.dark-mode .shop-topbar { background: #1a1a1a; }
+body.dark-mode .shop-topbar p { color: #ccc; }
+body.dark-mode .shop-topbar strong { color: #fff; }
+
+/* ===========================
+    Accordion (product tabs)
+   =========================== */
+
+body.dark-mode .accordion-item { background: #1a1a1a; }
+body.dark-mode .accordion-button { background: #1a1a1a !important; color: #fff !important; }
+body.dark-mode .accordion-body { background: #1a1a1a; color: #bbb; }
+
+/* ===========================
+    Newsletter form input
+   =========================== */
+
+body.dark-mode .newsletter-form input {
+    background: #222;
+    color: #fff;
+}
+
+body.dark-mode .newsletter-form input::placeholder { color: #666; }
+
+/* ===========================
+    Promo banner (stays dark — no change needed)
+    Hero slider (stays dark — no change needed)
+   =========================== */
+
+/* ===========================
+    Mega menu mobile collapse
+   =========================== */
+
+body.dark-mode .mega-menu { background: #1a1a1a; }
+
+/* ===========================
+    Bootstrap border utilities
+   =========================== */
+
+body.dark-mode .border-top { border-color: #333 !important; }
+body.dark-mode .border-bottom { border-color: #333 !important; }
+body.dark-mode .border { border-color: #333 !important; }
+
+/* ===========================
+    General headings inside dark
+    (catches any h2–h6 not
+    specifically targeted above)
+   =========================== */
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5,
+body.dark-mode h6 {
+    color: #fff;
+}
+
+/* ===========================
+    General paragraph text
+    (fallback for any <p> missed)
+   =========================== */
+
+body.dark-mode p { color: #bbb; }
+
+/* Keep specific overrides that need to stay white/colored */
+body.dark-mode .product-badge    { color: #fff; }
+body.dark-mode .promo-tag        { color: #fff; }
+body.dark-mode .hero-subtitle    { color: #fff; }
+body.dark-mode .footer-bottom p  { color: #555; }
+body.dark-mode .shop-banner p    { color: #ccc; }
+body.dark-mode .badge            { color: #fff; }
+
+/* ===========================
+    Input group border
+   =========================== */
+
+body.dark-mode .input-group .btn-dark {
+    background: #333;
+    border-color: #444;
+    color: #fff;
+}
+
+body.dark-mode .input-group .btn-dark:hover {
+    background: #555;
+}
+
+/* ===========================
+    Quantity stepper buttons
+   =========================== */
+
+body.dark-mode .btn-light {
+    background: #2a2a2a;
+    border-color: #333;
+    color: #ccc;
+}
+
+body.dark-mode .btn-light:hover {
+    background: #333;
+    color: #fff;
+}
+
+/* ===========================
+    Coupon input border fix
+   =========================== */
+
+body.dark-mode .coupon-box .form-control {
+    background: #222;
+    border-color: #333;
+    color: #fff;
 }

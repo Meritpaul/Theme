@@ -80,7 +80,7 @@ window.addEventListener("scroll", () => {
 });
 
 /* =====================================================
-   CLOSE MOBILE NAVBAR ON LINK CLICK
+    CLOSE MOBILE NAVBAR ON LINK CLICK
    ===================================================== */
 
 document.addEventListener("DOMContentLoaded", () => {
